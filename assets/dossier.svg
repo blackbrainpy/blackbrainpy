@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Operator dossier">
+<defs>
+<style>
+.lb{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:11px;letter-spacing:3px;fill:#FCEE0A;opacity:.55}
+.vl{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:17px;letter-spacing:1px;fill:#EDEAE0}
+.sm{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:13px;fill:#EDEAE0;opacity:.75}
+.tg{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:13px;letter-spacing:3px;fill:#08070a}
+@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.12}}
+@keyframes sw{0%{transform:translate(0,0)}100%{transform:translate(0,220px)}}
+@keyframes st{0%{width:0}100%{width:300px}}
+.bk{animation:bl 1.2s infinite steps(1)}
+.scn{animation:sw 3.4s linear infinite}
+.stt{animation:st 2.8s ease-out forwards}
+</style>
+<pattern id="gr2" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#FCEE0A" stroke-width="0.5" opacity="0.08"/></pattern>
+<pattern id="sc2" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>
+<pattern id="bc" width="22" height="34" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="2" height="34" fill="#FCEE0A"/><rect x="4" y="0" width="1" height="34" fill="#FCEE0A"/>
+<rect x="7" y="0" width="3" height="34" fill="#FCEE0A"/><rect x="12" y="0" width="1" height="34" fill="#FCEE0A"/>
+<rect x="15" y="0" width="2" height="34" fill="#FCEE0A"/><rect x="19" y="0" width="1" height="34" fill="#FCEE0A"/></pattern>
+<clipPath id="pf"><rect x="60" y="52" width="200" height="220"/></clipPath>
+</defs>
+<rect width="1200" height="330" fill="#08070a"/>
+<rect width="1200" height="330" fill="url(#gr2)"/>
+<g clip-path="url(#pf)">
+<rect x="60" y="52" width="200" height="220" fill="#100e14"/>
+<g stroke="#FCEE0A" stroke-width="1" opacity="0.35" fill="none">
+<circle cx="160" cy="130" r="46"/><circle cx="160" cy="130" r="30"/>
+<path d="M160 60 L160 200 M90 130 L230 130"/>
+</g>
+<text x="160" y="228" class="lb" text-anchor="middle" style="opacity:.7">NO VISUAL ON FILE</text>
+<text x="160" y="246" class="lb" text-anchor="middle" style="opacity:.4">REF 291556072</text>
+<rect x="60" y="52" width="200" height="3" fill="#00E5FF" opacity="0.5" class="scn"/>
+</g>
+<rect x="60" y="52" width="200" height="220" fill="none" stroke="#FCEE0A" stroke-width="2" opacity="0.85"/>
+<g stroke="#FF003C" stroke-width="3" fill="none">
+<path d="M60 76 L60 52 L84 52"/><path d="M236 272 L260 272 L260 248"/>
+</g>
+<rect x="60" y="284" width="200" height="24" fill="#FCEE0A"/>
+<text class="tg" x="160" y="301" text-anchor="middle">OPERATOR ID</text>
+<g transform="translate(320,0)">
+<text class="lb" x="0" y="66">HANDLE</text><text class="vl" x="150" y="68">blackbrainpy</text>
+<text class="lb" x="0" y="104">ORG</text><text class="vl" x="150" y="106">GENZ TECH</text>
+<text class="lb" x="0" y="142">SECTOR</text><text class="vl" x="150" y="144">NEW YORK // REMOTE</text>
+<text class="lb" x="0" y="180">CLASS</text><text class="vl" x="150" y="182">NETRUNNER . FULL-STACK</text>
+<text class="lb" x="0" y="218">MAIN QUEST</text><text class="sm" x="150" y="220">genztech.blog - daily tech news for Gen Z</text>
+<text class="lb" x="0" y="248">SIDE QUESTS</text><text class="sm" x="150" y="250">acoustic wall scanner (tap-mapper)</text>
+<text class="sm" x="150" y="270">home repair cost calculators . free public dev API</text>
+<line x1="0" y1="80" x2="780" y2="80" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
+<line x1="0" y1="118" x2="780" y2="118" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
+<line x1="0" y1="156" x2="780" y2="156" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
+<line x1="0" y1="194" x2="780" y2="194" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
+<text class="lb" x="0" y="298">STATUS</text>
+<rect x="150" y="288" width="300" height="8" fill="#FCEE0A" opacity="0.14"/>
+<rect x="150" y="288" height="8" fill="#FCEE0A" class="stt"/>
+<text class="lb" x="466" y="298" style="opacity:.9">SHIPPING</text>
+<circle cx="566" cy="294" r="4" fill="#FF003C" class="bk"/>
+</g>
+<rect x="1096" y="52" width="66" height="34" fill="url(#bc)" opacity="0.8"/>
+<text class="lb" x="1162" y="100" text-anchor="end">SCAN VALID</text>
+<g stroke="#FCEE0A" stroke-width="2" fill="none" opacity="0.8">
+<path d="M1160 24 L1176 24 L1176 40"/><path d="M1160 310 L1176 310 L1176 294"/>
+</g>
+<rect width="1200" height="330" fill="url(#sc2)" opacity="0.5"/>
+</svg>

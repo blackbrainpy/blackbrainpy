@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 78" width="1200" height="78" role="img" aria-label="ARSENAL">
+<defs>
+<style>
+.hd{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:30px;letter-spacing:5px}
+.nm{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:40px}
+.mn{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace}
+@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.1}}
+@keyframes ru{0%{width:0}100%{width:194px}}
+.b{animation:bl 1.3s infinite steps(1)}
+.r{animation:ru 2.4s ease-out forwards}
+</style>
+<pattern id="h01" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<rect width="24" height="24" fill="#08070a"/><rect width="12" height="24" fill="#FCEE0A"/></pattern>
+<pattern id="s01" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>
+</defs>
+<rect width="1200" height="78" fill="#08070a"/>
+<rect x="0" y="0" width="14" height="78" fill="url(#h01)"/>
+<text class="nm" x="36" y="52" fill="#FCEE0A" opacity="0.28">01</text>
+<text class="hd" x="102" y="50" fill="#FCEE0A">ARSENAL</text>
+<text class="hd" x="102" y="50" fill="#FF003C" opacity="0.5" transform="translate(3,0)">ARSENAL</text>
+<text class="hd" x="102" y="50" fill="#FCEE0A">ARSENAL</text>
+<rect x="102" y="62" height="3" fill="#FCEE0A" class="r"/>
+<g class="mn" fill="#FCEE0A" opacity="0.45" font-size="11" letter-spacing="3" text-anchor="end">
+<text x="1176" y="36">LOADOUT VERIFIED</text><text x="1176" y="56" opacity="0.7">12 MODULES ONLINE</text></g>
+<circle cx="1188" cy="32" r="3.5" fill="#FF003C" class="b"/>
+<rect width="1200" height="78" fill="url(#s01)" opacity="0.5"/>
+</svg>
