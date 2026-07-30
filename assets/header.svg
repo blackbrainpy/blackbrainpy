@@ -49,7 +49,7 @@
 <text x="1158" y="46">STATUS . SHIPPING</text>
 <text x="1158" y="64" opacity="0.6">UPTIME 100% . PING 4ms</text>
 </g>
-<g transform="translate(42,290)" class="mono">
+<g transform="translate(64,286)" class="mono">
 <text x="0" y="0" font-size="11" fill="#FCEE0A" opacity="0.5" letter-spacing="3">NEURAL LOAD</text>
 <rect x="0" y="8" width="186" height="6" fill="#FCEE0A" opacity="0.15"/>
 <rect x="0" y="8" height="6" fill="#FCEE0A" class="bx"/>
@@ -66,15 +66,18 @@
 <g clip-path="url(#c2)" class="g2"><text class="ttl" x="60" y="212" fill="#00E5FF" opacity="0.95">BLACKBRAINPY</text></g>
 <g clip-path="url(#c3)" class="g3"><text class="ttl" x="60" y="212" fill="#FCEE0A">BLACKBRAINPY</text></g>
 <rect x="60" y="228" width="880" height="2" fill="url(#fade)" opacity="0.7"/>
-<g class="mono" transform="translate(62,258)">
-<text x="0" y="0" font-size="15" fill="#FCEE0A" letter-spacing="5" opacity="0.95">GENZ TECH</text>
-<text x="122" y="0" font-size="15" fill="#FF003C" letter-spacing="5" opacity="0.9">//</text>
-<text x="152" y="0" font-size="15" fill="#e8e6df" letter-spacing="3" opacity="0.8">DAILY TECH NEWS FOR GEN Z</text>
-<text x="418" y="0" font-size="15" fill="#FF003C" letter-spacing="5" opacity="0.9">//</text>
-<text x="448" y="0" font-size="15" fill="#FCEE0A" letter-spacing="3" opacity="0.95">genztech.blog</text>
+<text class="mono" x="62" y="258" font-size="15" letter-spacing="3">
+<tspan fill="#FCEE0A" opacity="0.95">GENZ TECH</tspan><tspan fill="#FF003C" opacity="0.9">   //   </tspan><tspan fill="#e8e6df" opacity="0.8">DAILY TECH NEWS FOR GEN Z</tspan><tspan fill="#FF003C" opacity="0.9">   //   </tspan><tspan fill="#FCEE0A" opacity="0.95">genztech.blog</tspan>
+</text>
+<g transform="translate(1052,158)" opacity="0.5">
+<g stroke="#FCEE0A" fill="none" stroke-width="1.2">
+<circle cx="0" cy="0" r="56" opacity="0.35"/><circle cx="0" cy="0" r="38" opacity="0.55"/>
+<path d="M0 -70 L0 -60 M0 60 L0 70 M-70 0 L-60 0 M60 0 L70 0" stroke-width="2"/>
+<path d="M-38 -38 A54 54 0 0 1 38 -38" stroke="#FF003C" opacity="0.8" stroke-width="2"/>
+<path d="M-38 38 A54 54 0 0 0 38 38" stroke="#00E5FF" opacity="0.7" stroke-width="2"/>
 </g>
-<g transform="translate(1012,112)" class="mono" fill="#FCEE0A" opacity="0.28" font-size="26" letter-spacing="6">
-<text x="0" y="0">サイバー</text><text x="0" y="34">パンク</text><text x="0" y="68">エッジ</text><text x="0" y="102">ランナーズ</text>
+<circle cx="0" cy="0" r="5" fill="#FCEE0A" class="bl"/>
+<text class="mono" x="0" y="90" font-size="10" letter-spacing="4" fill="#FCEE0A" text-anchor="middle" opacity="0.7">EDGERUNNER</text>
 </g>
 <g stroke="#FCEE0A" stroke-width="2.5" fill="none" opacity="0.9">
 <path d="M28 92 L28 78 L52 78"/><path d="M1172 92 L1172 78 L1148 78"/>
