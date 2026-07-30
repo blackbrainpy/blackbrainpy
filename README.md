@@ -8,22 +8,19 @@
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-builds.svg" width="100%" alt="02 ACTIVE BUILDS" />
 
-<a href="https://github.com/blackbrainpy/genztech-api"><img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=genztech-api&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&icon_color=FF003C" /></a>
-<a href="https://github.com/blackbrainpy/portfolio"><img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=portfolio&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&icon_color=FF003C" /></a>
-<a href="https://github.com/blackbrainpy/blackhole-demo"><img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=blackhole-demo&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&icon_color=FF003C" /></a>
-<a href="https://github.com/blackbrainpy/tetherball-zero"><img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=tetherball-zero&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&icon_color=FF003C" /></a>
+<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/builds.svg" width="100%" alt="Active builds" />
+
+**[genztech-api](https://github.com/blackbrainpy/genztech-api)** · **[portfolio](https://github.com/blackbrainpy/portfolio)** · **[blackhole-demo](https://github.com/blackbrainpy/blackhole-demo)** · **[tetherball-zero](https://github.com/blackbrainpy/tetherball-zero)**
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-streams.svg" width="100%" alt="03 DATA STREAMS" />
 
-<img height="165" src="https://gh-readme-stats.vercel.app/api?username=blackbrainpy&show_icons=true&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&icon_color=FF003C&include_all_commits=true&count_private=true" />
-<img height="165" src="https://gh-readme-stats.vercel.app/api/top-langs/?username=blackbrainpy&layout=compact&hide_border=true&bg_color=08070a&title_color=FCEE0A&text_color=EDEAE0&langs_count=8" />
-<img height="165" src="https://streak-stats.demolab.com?user=blackbrainpy&hide_border=true&background=08070a&stroke=FCEE0A&ring=FCEE0A&fire=FF003C&currStreakLabel=FCEE0A&sideLabels=FCEE0A&currStreakNum=EDEAE0&sideNums=EDEAE0&dates=8a866f" />
+<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/stats.svg" width="100%" alt="Telemetry" />
+
+<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/activity.svg" width="100%" alt="Neural activity log" />
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-ice.svg" width="100%" alt="04 ICE BREAKER" />
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/output/github-snake-dark.svg" width="100%" alt="Contribution grid" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=blackbrainpy&bg_color=08070a&color=FCEE0A&line=FF003C&point=FCEE0A&area_color=FCEE0A&area=true&hide_border=true&custom_title=NEURAL%20ACTIVITY%20LOG" width="100%" />
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-transmission.svg" width="100%" alt="05 TRANSMISSION" />
 
@@ -39,6 +36,6 @@
 > _
 ```
 
-**[genztech.blog](https://genztech.blog)** · **[@genztechblog](https://x.com/genztechblog)** · **[genztech-api](https://github.com/blackbrainpy/genztech-api)**
+**[genztech.blog](https://genztech.blog)** · **[@genztechblog](https://x.com/genztechblog)**
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/footer.svg" width="100%" alt="Stay jacked in" />

@@ -1,0 +1,42 @@
+name: Refresh Stat Cards
+
+on:
+  schedule:
+    - cron: "15 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/stats_build.py"
+      - ".github/workflows/stats.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stat SVGs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python assets/stats_build.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg assets/stats.svg assets/builds.svg
+          if git diff --staged --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh stat cards [skip ci]"
+            git push
+          fi
