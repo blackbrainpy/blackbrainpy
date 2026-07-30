@@ -57,12 +57,14 @@
 
 ## `⟦ DATA STREAMS ⟧`
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=blackbrainpy&show_icons=true&hide_border=true&bg_color=0D0221&title_color=FF00A0&text_color=00F0FF&icon_color=B026FF&include_all_commits=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=blackbrainpy&layout=compact&hide_border=true&bg_color=0D0221&title_color=FF00A0&text_color=00F0FF&langs_count=8" />
+<img height="165" src="https://gh-readme-stats.vercel.app/api?username=blackbrainpy&show_icons=true&hide_border=true&bg_color=0D0221&title_color=FF00A0&text_color=00F0FF&icon_color=B026FF&include_all_commits=true&count_private=true" />
+<img height="165" src="https://gh-readme-stats.vercel.app/api/top-langs/?username=blackbrainpy&layout=compact&hide_border=true&bg_color=0D0221&title_color=FF00A0&text_color=00F0FF&langs_count=8" />
 
 <img height="165" src="https://streak-stats.demolab.com?user=blackbrainpy&hide_border=true&background=0D0221&stroke=B026FF&ring=FF00A0&fire=FF00A0&currStreakLabel=00F0FF&sideLabels=00F0FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B7FA8" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=blackbrainpy&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" width="95%" />
+<img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=blackbrainpy&theme=radical" />
+<img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=blackbrainpy&theme=radical" />
+<img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=blackbrainpy&theme=radical&utcOffset=-5" />
 
 </div>
 
@@ -73,16 +75,16 @@
 ## `⟦ ACTIVE BUILDS ⟧`
 
 <a href="https://github.com/blackbrainpy/genztech-api">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=genztech-api&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
+  <img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=genztech-api&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
 </a>
-<a href="https://github.com/blackbrainpy/techpulse">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=techpulse&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
+<a href="https://github.com/blackbrainpy/portfolio">
+  <img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=portfolio&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
 </a>
 <a href="https://github.com/blackbrainpy/blackhole-demo">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=blackhole-demo&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
+  <img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=blackhole-demo&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
 </a>
 <a href="https://github.com/blackbrainpy/tetherball-zero">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=tetherball-zero&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
+  <img width="49%" src="https://gh-readme-stats.vercel.app/api/pin/?username=blackbrainpy&repo=tetherball-zero&hide_border=true&bg_color=0D0221&title_color=00FF9F&text_color=00F0FF&icon_color=FF00A0" />
 </a>
 
 </div>
