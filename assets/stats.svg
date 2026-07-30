@@ -25,10 +25,10 @@
 <rect x="40" y="26" width="3" height="278" fill="#FCEE0A" opacity="0.5"/>
 <text class="m" x="60" y="34" fill="#FCEE0A" opacity="0.45">TELEMETRY // ROLLING 12 MONTHS</text>
 <circle cx="1152" cy="30" r="3.5" fill="#FF003C" class="bk"/>
-<text class="m" x="1140" y="34" fill="#FCEE0A" opacity="0.45" text-anchor="end">21 CONTRIBUTIONS</text>
+<text class="m" x="1140" y="34" fill="#FCEE0A" opacity="0.45" text-anchor="end">22 CONTRIBUTIONS</text>
 <g transform="translate(62,92)">
 <rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">9</text>
+<text class="big" x="18" y="0">10</text>
 <text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">COMMITS</text>
 </g>
 <g transform="translate(452,92)">
@@ -43,12 +43,12 @@
 </g>
 <g transform="translate(62,200)">
 <rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">6</text>
+<text class="big" x="18" y="0">3</text>
 <text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">STARS EARNED</text>
 </g>
 <g transform="translate(452,200)">
 <rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">8</text>
+<text class="big" x="18" y="0">5</text>
 <text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">REPOSITORIES</text>
 </g>
 <g transform="translate(842,200)">
