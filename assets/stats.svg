@@ -61,7 +61,7 @@
 <text class="m" x="180" y="0" fill="#EDEAE0">1 DAYS</text>
 <text class="m" x="330" y="0" fill="#FCEE0A" opacity="0.5">LONGEST STREAK</text>
 <text class="m" x="520" y="0" fill="#EDEAE0">1 DAYS</text>
-<text class="m" x="670" y="0" fill="#FCEE0A" opacity="0.5">ACTIVE SINCE</text>
+<text class="m" x="670" y="0" fill="#FCEE0A" opacity="0.5">WINDOW START</text>
 <text class="m" x="830" y="0" fill="#EDEAE0">2025-07-27</text>
 </g>
 <g stroke="#FCEE0A" stroke-width="2" fill="none" opacity="0.8"><path d="M1160 20 L1176 20 L1176 36"/><path d="M1160 310 L1176 310 L1176 294"/></g>

@@ -166,14 +166,15 @@ def stats(user, ds):
           '<text class="m" x="180" y="0" fill="%s">%d DAYS</text>\n'
           '<text class="m" x="330" y="0" fill="%s" opacity="0.5">LONGEST STREAK</text>\n'
           '<text class="m" x="520" y="0" fill="%s">%d DAYS</text>\n'
-          '<text class="m" x="670" y="0" fill="%s" opacity="0.5">ACTIVE SINCE</text>\n'
+          '<text class="m" x="670" y="0" fill="%s" opacity="0.5">WINDOW START</text>\n'
           '<text class="m" x="830" y="0" fill="%s">%s</text>\n</g>\n'
           % (YEL, INK, cur, YEL, INK, lng, YEL, INK, ds[0][0] if ds else "-"))
     s += tail(W, H)
     return s
 
 def builds(user):
-    repos = [r for r in user["repositories"]["nodes"] if not r["isPrivate"]][:4]
+    repos = [r for r in user["repositories"]["nodes"]
+             if not r["isPrivate"] and r["name"].lower() != LOGIN.lower()][:4]
     W, H = 1200, 60 + 68 * len(repos) + 30
     s = head(W, H, "Active builds")
     s += frame(W, H, "REPO SCAN // PUBLIC", "%d TRACKED" % len(repos))
@@ -188,8 +189,8 @@ def builds(user):
               '<text class="hd" x="18" y="0">%s</text>\n'
               '<text class="v" x="18" y="22" opacity="0.7">%s</text>\n'
               '<text class="m" x="900" y="0" fill="%s" opacity="0.75">%s</text>\n'
-              '<text class="m" x="1060" y="0" fill="%s">* %d</text>\n'
-              '<text class="m" x="1060" y="22" fill="%s" opacity="0.5">Y %d</text>\n'
+              '<text class="m" x="1076" y="0" fill="%s" text-anchor="end">STARS %d</text>\n'
+              '<text class="m" x="1076" y="22" fill="%s" opacity="0.5" text-anchor="end">FORKS %d</text>\n'
               '<line x1="0" y1="34" x2="1076" y2="34" stroke="%s" stroke-width="1" opacity="0.10"/>\n</g>\n'
               % (y, YEL, esc(r["name"]), desc, CYA, lang.upper(), YEL,
                  r["stargazerCount"], YEL, r["forkCount"], YEL))
