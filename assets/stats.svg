@@ -43,12 +43,12 @@
 </g>
 <g transform="translate(62,200)">
 <rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">3</text>
+<text class="big" x="18" y="0">6</text>
 <text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">STARS EARNED</text>
 </g>
 <g transform="translate(452,200)">
 <rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">5</text>
+<text class="big" x="18" y="0">8</text>
 <text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">REPOSITORIES</text>
 </g>
 <g transform="translate(842,200)">
