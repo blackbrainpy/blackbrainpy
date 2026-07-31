@@ -148,8 +148,10 @@ def stats(user, ds):
     tiles = [("COMMITS", c["totalCommitContributions"]),
              ("PULL REQUESTS", c["totalPullRequestContributions"]),
              ("ISSUES", c["totalIssueContributions"]),
-             ("STARS EARNED", stars),
-             ("REPOSITORIES", user["repositories"]["totalCount"]),
+             # GITHUB_TOKEN in Actions only sees public data, so these are
+             # public-only counts. Labelled as such rather than overstated.
+             ("PUBLIC STARS", stars),
+             ("PUBLIC REPOS", user["repositories"]["totalCount"]),
              ("FOLLOWERS", user["followers"]["totalCount"])]
     s = head(W, H, "Data streams")
     s += frame(W, H, "telemetry &#183; rolling 12 months", "%d contributions" % cal["totalContributions"])
