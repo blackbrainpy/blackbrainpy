@@ -109,8 +109,10 @@ def header():
           % (G, TEXTLOW))
     s += hairline(G, 268, W - G)
     s += ('<text class="meta" x="%d" y="298">NEW YORK &#183; REMOTE &#183; FULL-STACK</text>\n' % G)
-    s += ('<text class="mono" x="%d" y="298" font-size="12" font-weight="500" fill="%s" text-anchor="end">'
-          '<tspan fill="%s">$ </tspan>genztech.blog</text>\n' % (W - G, TEXTMID, SIGNAL))
+    # explicit x, not text-anchor="end": anchoring a multi-tspan run makes
+    # the Signal "$" overlap the label in some renderers.
+    s += ('<text class="mono" x="%d" y="298" font-size="12" font-weight="500" fill="%s">'
+          '<tspan fill="%s">$ </tspan>genztech.blog</text>\n' % (W - G - 112, TEXTMID, SIGNAL))
     s += "</svg>\n"
     return s
 

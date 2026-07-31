@@ -31,5 +31,5 @@
 <text class="dek" x="28" y="236" font-size="16" fill="#7D8084">acoustic wall scanner &#183; cost calculators &#183; a free dev-data API.</text>
 <line x1="28" y1="268" x2="752" y2="268" stroke="#1D1F22" stroke-width="1"/>
 <text class="meta" x="28" y="298">NEW YORK &#183; REMOTE &#183; FULL-STACK</text>
-<text class="mono" x="752" y="298" font-size="12" font-weight="500" fill="#A9ABAE" text-anchor="end"><tspan fill="#FF4D00">$ </tspan>genztech.blog</text>
+<text class="mono" x="640" y="298" font-size="12" font-weight="500" fill="#A9ABAE"><tspan fill="#FF4D00">$ </tspan>genztech.blog</text>
 </svg>
