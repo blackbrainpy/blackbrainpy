@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """Generates activity.svg, stats.svg and builds.svg in the GENZ TECH Terminal style
 from live GitHub API data. Run by .github/workflows/stats.yml."""
 import os, json, datetime, urllib.request
@@ -122,7 +122,7 @@ def activity(ds):
     line = " ".join("%s%.1f,%.1f" % ("M" if i == 0 else "L", xs[i], ys[i]) for i in range(len(pts)))
     area = line + " L%.1f,%.1f L%.1f,%.1f Z" % (xs[-1], yb, xs[0], yb)
     s = head(W, H, "Neural activity log")
-    s += frame(W, H, "NEURAL ACTIVITY LOG // LAST 30 DAYS", "PEAK %d/DAY" % mx)
+    s += frame(W, H, "activity &#183; last 30 days", "peak %d/day" % mx)
     for i in range(5):
         y = yt + (yb - yt) * i / 4.0
         s += '<line x1="%d" y1="%.1f" x2="%d" y2="%.1f" stroke="%s" stroke-width="1"/>\n' % (x0, y, x1, y, HAIR)
@@ -152,7 +152,7 @@ def stats(user, ds):
              ("REPOSITORIES", user["repositories"]["totalCount"]),
              ("FOLLOWERS", user["followers"]["totalCount"])]
     s = head(W, H, "Data streams")
-    s += frame(W, H, "TELEMETRY // ROLLING 12 MONTHS", "%d CONTRIBUTIONS" % cal["totalContributions"])
+    s += frame(W, H, "telemetry &#183; rolling 12 months", "%d contributions" % cal["totalContributions"])
     for i, (k, v) in enumerate(tiles):
         x = 62 + (i % 3) * 390
         y = 92 + (i // 3) * 108
@@ -162,11 +162,11 @@ def stats(user, ds):
               '<text class="m" x="20" y="20" fill="%s">%s</text>\n</g>\n'
               % (x, y, '#26282B', v, LOW, k))
     s += ('<g transform="translate(62,290)">\n'
-          '<text class="m" x="0" y="0" fill="%s">CURRENT STREAK</text>\n'
+          '<text class="m" x="0" y="0" fill="%s">current streak</text>\n'
           '<text class="m" x="180" y="0" fill="%s">%d DAYS</text>\n'
-          '<text class="m" x="330" y="0" fill="%s">LONGEST STREAK</text>\n'
+          '<text class="m" x="330" y="0" fill="%s">longest streak</text>\n'
           '<text class="m" x="520" y="0" fill="%s">%d DAYS</text>\n'
-          '<text class="m" x="670" y="0" fill="%s">WINDOW START</text>\n'
+          '<text class="m" x="670" y="0" fill="%s">window start</text>\n'
           '<text class="m" x="830" y="0" fill="%s">%s</text>\n</g>\n'
           % (LOW, INK, cur, LOW, INK, lng, LOW, INK, ds[0][0] if ds else "-"))
     s += tail(W, H)
@@ -177,7 +177,7 @@ def builds(user):
              if not r["isPrivate"] and r["name"].lower() != LOGIN.lower()][:4]
     W, H = 1200, 60 + 68 * len(repos) + 30
     s = head(W, H, "Active builds")
-    s += frame(W, H, "REPO SCAN // PUBLIC", "%d TRACKED" % len(repos))
+    s += frame(W, H, "repo scan &#183; public", "%d tracked" % len(repos))
     for i, r in enumerate(repos):
         y = 84 + i * 68
         lang = (r["primaryLanguage"] or {}).get("name") or "TEXT"
@@ -189,10 +189,10 @@ def builds(user):
               '<text class="hd" x="18" y="0">%s</text>\n'
               '<text class="v" x="18" y="22">%s</text>\n'
               '<text class="m" x="900" y="0" fill="%s">%s</text>\n'
-              '<text class="m" x="1076" y="0" fill="%s" text-anchor="end">STARS %d</text>\n'
-              '<text class="m" x="1076" y="22" fill="%s" text-anchor="end">FORKS %d</text>\n'
+              '<text class="m" x="1076" y="0" fill="%s" text-anchor="end">stars %d</text>\n'
+              '<text class="m" x="1076" y="22" fill="%s" text-anchor="end">forks %d</text>\n'
               '<line x1="0" y1="34" x2="1076" y2="34" stroke="%s" stroke-width="1"/>\n</g>\n'
-              % (y, YEL, esc(r["name"]), desc, CYA, lang.upper(), YEL,
+              % (y, YEL, esc(r["name"]), desc, CYA, lang.lower(), INK,
                  r["stargazerCount"], LOW, r["forkCount"], HAIR))
     s += tail(W, H)
     return s
