@@ -20,7 +20,6 @@
 </pattern>
 </defs>
 <rect width="1200" height="92" fill="#0A0B0C"/>
-<rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
 <text class="sec" x="28" y="52"><tspan fill="#FF4D00">$ </tspan>git log --stat</text>
 <text class="meta" x="1172" y="52" text-anchor="end">rolling 12 months</text>
 <line x1="28" y1="72" x2="1172" y2="72" stroke="#1D1F22" stroke-width="1"/>

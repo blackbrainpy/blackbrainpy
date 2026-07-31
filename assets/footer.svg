@@ -20,7 +20,6 @@
 </pattern>
 </defs>
 <rect width="1200" height="260" fill="#0A0B0C"/>
-<rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
 <rect x="28" y="24" width="1144" height="150" fill="#0E0F11" stroke="#1D1F22" stroke-width="1" rx="5"/>
 <text class="lab" x="56" y="60" fill="#6B6E72">// newsletter</text>
 <text class="sec" x="56" y="98" font-size="30"><tspan fill="#FF4D00">$ </tspan>subscribe --weekly</text>

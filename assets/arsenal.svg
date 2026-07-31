@@ -20,7 +20,6 @@
 </pattern>
 </defs>
 <rect width="1200" height="372" fill="#0A0B0C"/>
-<rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
 <text class="idx" x="28" y="62">01</text>
 <text class="mono" x="74" y="62" font-size="16" font-weight="600" fill="#F2F2F0">python</text>
 <text class="sans" x="328" y="62" font-size="14" fill="#A9ABAE">scrapers, data pipelines, the API build</text>

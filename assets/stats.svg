@@ -1,69 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Data streams">
 <defs>
 <style>
-.hd{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:16px;letter-spacing:2px;fill:#FCEE0A}
-.big{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:38px;fill:#FCEE0A}
-.m{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:11px;letter-spacing:3px}
-.v{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:13px;fill:#EDEAE0}
-@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.12}}
+.hd{font-family:'IBM Plex Mono','SF Mono','Consolas',monospace;font-weight:600;font-size:17px;letter-spacing:-0.01em;fill:#F2F2F0}
+.big{font-family:'IBM Plex Mono','SF Mono','Consolas',monospace;font-weight:600;font-size:34px;fill:#F2F2F0}
+.m{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:500;font-size:11px;letter-spacing:0.07em}
+.v{font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;font-size:14px;fill:#A9ABAE}
 @keyframes dr{0%{stroke-dashoffset:2600}100%{stroke-dashoffset:0}}
-@keyframes fi{0%{opacity:0}100%{opacity:.30}}
-.bk{animation:bl 1.2s infinite steps(1)}
+@keyframes fi{0%{opacity:0}100%{opacity:.22}}
 .ln{stroke-dasharray:2600;animation:dr 2.6s ease-out forwards}
 .ar{animation:fi 2.6s ease-out forwards;opacity:0}
 </style>
-<pattern id="gg" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M40 0H0V40" fill="none" stroke="#FCEE0A" stroke-width="0.5" opacity="0.08"/></pattern>
-<pattern id="ss" width="3" height="3" patternUnits="userSpaceOnUse">
-<rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>
 <linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="#FCEE0A" stop-opacity="0.55"/>
-<stop offset="1" stop-color="#FCEE0A" stop-opacity="0"/></linearGradient>
+<stop offset="0" stop-color="#FF4D00" stop-opacity="0.42"/>
+<stop offset="1" stop-color="#FF4D00" stop-opacity="0"/></linearGradient>
 </defs>
-<rect width="1200" height="330" fill="#08070a"/>
-<rect width="1200" height="330" fill="url(#gg)"/>
-<rect x="40" y="26" width="3" height="278" fill="#FCEE0A" opacity="0.5"/>
-<text class="m" x="60" y="34" fill="#FCEE0A" opacity="0.45">TELEMETRY // ROLLING 12 MONTHS</text>
-<circle cx="1152" cy="30" r="3.5" fill="#FF003C" class="bk"/>
-<text class="m" x="1140" y="34" fill="#FCEE0A" opacity="0.45" text-anchor="end">24 CONTRIBUTIONS</text>
+<rect width="1200" height="330" fill="#0A0B0C"/>
+<text class="m" x="28" y="42" fill="#7D8084"><tspan fill="#FF4D00">// </tspan>TELEMETRY // ROLLING 12 MONTHS</text>
+<text class="m" x="1172" y="42" fill="#7D8084" text-anchor="end">25 CONTRIBUTIONS</text>
+<line x1="28" y1="60" x2="1172" y2="60" stroke="#1D1F22" stroke-width="1"/>
 <g transform="translate(62,92)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">12</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">COMMITS</text>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
+<text class="big" x="18" y="0">13</text>
+<text class="m" x="20" y="20" fill="#7D8084">COMMITS</text>
 </g>
 <g transform="translate(452,92)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
 <text class="big" x="18" y="0">3</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">PULL REQUESTS</text>
+<text class="m" x="20" y="20" fill="#7D8084">PULL REQUESTS</text>
 </g>
 <g transform="translate(842,92)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
 <text class="big" x="18" y="0">0</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">ISSUES</text>
+<text class="m" x="20" y="20" fill="#7D8084">ISSUES</text>
 </g>
 <g transform="translate(62,200)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">3</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">STARS EARNED</text>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
+<text class="big" x="18" y="0">6</text>
+<text class="m" x="20" y="20" fill="#7D8084">STARS EARNED</text>
 </g>
 <g transform="translate(452,200)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
-<text class="big" x="18" y="0">5</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">REPOSITORIES</text>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
+<text class="big" x="18" y="0">8</text>
+<text class="m" x="20" y="20" fill="#7D8084">REPOSITORIES</text>
 </g>
 <g transform="translate(842,200)">
-<rect x="0" y="-34" width="3" height="52" fill="#FF003C" opacity="0.55"/>
+<rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
 <text class="big" x="18" y="0">0</text>
-<text class="m" x="20" y="20" fill="#FCEE0A" opacity="0.5">FOLLOWERS</text>
+<text class="m" x="20" y="20" fill="#7D8084">FOLLOWERS</text>
 </g>
 <g transform="translate(62,290)">
-<text class="m" x="0" y="0" fill="#FCEE0A" opacity="0.5">CURRENT STREAK</text>
-<text class="m" x="180" y="0" fill="#EDEAE0">1 DAYS</text>
-<text class="m" x="330" y="0" fill="#FCEE0A" opacity="0.5">LONGEST STREAK</text>
-<text class="m" x="520" y="0" fill="#EDEAE0">1 DAYS</text>
-<text class="m" x="670" y="0" fill="#FCEE0A" opacity="0.5">WINDOW START</text>
-<text class="m" x="830" y="0" fill="#EDEAE0">2025-07-27</text>
+<text class="m" x="0" y="0" fill="#7D8084">CURRENT STREAK</text>
+<text class="m" x="180" y="0" fill="#F2F2F0">2 DAYS</text>
+<text class="m" x="330" y="0" fill="#7D8084">LONGEST STREAK</text>
+<text class="m" x="520" y="0" fill="#F2F2F0">2 DAYS</text>
+<text class="m" x="670" y="0" fill="#7D8084">WINDOW START</text>
+<text class="m" x="830" y="0" fill="#F2F2F0">2025-07-27</text>
 </g>
-<g stroke="#FCEE0A" stroke-width="2" fill="none" opacity="0.8"><path d="M1160 20 L1176 20 L1176 36"/><path d="M1160 310 L1176 310 L1176 294"/></g>
-<rect width="1200" height="330" fill="url(#ss)" opacity="0.5"/>
 </svg>

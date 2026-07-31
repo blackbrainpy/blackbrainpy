@@ -99,12 +99,11 @@ CHROME = """<defs>
 
 def frame(w, h, title, right):
     return ('<rect width="%d" height="%d" fill="%s"/>\n'
-            '<rect x="0" y="0" width="%d" height="2" fill="%s"/>\n'
             '<text class="m" x="28" y="42" fill="%s">'
             '<tspan fill="%s">// </tspan>%s</text>\n'
             '<text class="m" x="%d" y="42" fill="%s" text-anchor="end">%s</text>\n'
             '<line x1="28" y1="60" x2="%d" y2="60" stroke="%s" stroke-width="1"/>\n'
-            % (w, h, BG, w, YEL, LOW, YEL, title, w - 28, LOW, right, w - 28, HAIR))
+            % (w, h, BG, LOW, YEL, title, w - 28, LOW, right, w - 28, HAIR))
 
 def tail(w, h):
     return '</svg>\n'

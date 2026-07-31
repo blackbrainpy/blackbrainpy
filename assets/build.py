@@ -48,11 +48,16 @@ DEFS = """<defs>
 </defs>""".replace("@CSS@", CSS).replace("@PANEL2@", PANEL2)
 
 
-def head(w, h, label):
-    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" '
-            'role="img" aria-label="%s">\n%s\n<rect width="%d" height="%d" fill="%s"/>\n'
-            '<rect x="0" y="0" width="%d" height="2" fill="%s"/>\n'
-            % (w, h, w, h, label, DEFS, w, h, VOID, w, SIGNAL))
+def head(w, h, label, bar=False):
+    """bar=True draws the 2px Signal rule. Brand pins it to the top of a
+    *page*, so only the header carries it - repeating it on every section
+    would make the accent ambient, which the guide forbids."""
+    s = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" '
+         'role="img" aria-label="%s">\n%s\n<rect width="%d" height="%d" fill="%s"/>\n'
+         % (w, h, w, h, label, DEFS, w, h, VOID))
+    if bar:
+        s += '<rect x="0" y="0" width="%d" height="2" fill="%s"/>\n' % (w, SIGNAL)
+    return s
 
 
 def wordmark(x, y, size=26, cursor=False):
@@ -90,7 +95,7 @@ def live(x, y):
 def header():
     W, H = 1200, 340
     G = 28
-    s = head(W, H, "blackbrainpy - GENZ TECH")
+    s = head(W, H, "blackbrainpy - GENZ TECH", bar=True)
     s += wordmark(G, 46, 24)
     s += ('<text class="lab" x="250" y="44">AI  GADGETS  APPS  STARTUPS  CULTURE</text>\n')
     s += live(W - G - 46, 44)
@@ -121,7 +126,7 @@ def section(slug, cmd, right, num):
 
 
 def dossier():
-    W, H = 1200, 300
+    W, H = 1200, 356
     G = 28
     rows = [("handle", "blackbrainpy"),
             ("org", "GENZ TECH"),
@@ -138,9 +143,10 @@ def dossier():
         s += '<text class="meta" x="%d" y="%d">%s</text>\n' % (G + 28, y, k.upper())
         s += ('<text class="sans" x="%d" y="%d" font-size="15" fill="%s">%s</text>\n'
               % (G + 190, y, BODY, v))
-    s += ('<text class="mono" x="%d" y="252" font-size="13" fill="%s">'
+    s += hairline(G + 28, 276, W - G - 28)
+    s += ('<text class="mono" x="%d" y="308" font-size="13" fill="%s">'
           '<tspan fill="%s">$ </tspan>status: shipping</text>\n' % (G + 28, TEXTMID, SIGNAL))
-    s += ('<rect x="%d" y="241" width="9" height="14" fill="%s" class="cur"/>\n' % (G + 232, SIGNAL))
+    s += ('<rect x="%d" y="297" width="9" height="14" fill="%s" class="cur"/>\n' % (G + 232, SIGNAL))
     s += "</svg>\n"
     return s
 
