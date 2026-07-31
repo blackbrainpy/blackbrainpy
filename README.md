@@ -1,4 +1,7 @@
-<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/header.svg" width="100%" alt="blackbrainpy — GENZ TECH" />
+<p>
+<img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/header.svg" width="66%" alt="blackbrainpy — GENZ TECH" />
+<img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/operator.gif" width="32%" alt="// operator.gif" />
+</p>
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/dossier.svg" width="100%" alt="whoami" />
 

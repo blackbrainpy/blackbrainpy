@@ -93,23 +93,24 @@ def live(x, y):
 
 
 def header():
-    W, H = 1200, 340
+    """780x340 so it pairs inline with the 380x340 operator.gif. A real
+    <table> would work too, but GitHub's markdown CSS draws cell borders."""
+    W, H = 780, 340
     G = 28
     s = head(W, H, "blackbrainpy - GENZ TECH", bar=True)
-    s += wordmark(G, 46, 24)
-    s += ('<text class="lab" x="250" y="44">AI  GADGETS  APPS  STARTUPS  CULTURE</text>\n')
-    s += live(W - G - 46, 44)
+    s += wordmark(G, 46, 22)
+    s += live(W - G - 42, 44)
     s += hairline(G, 64, W - G)
     s += '<text class="kick" x="%d" y="112">~/ github &#183; profile</text>\n' % G
-    s += ('<text class="disp" x="%d" y="176" font-size="60">blackbrainpy'
+    s += ('<text class="disp" x="%d" y="172" font-size="54">blackbrainpy'
           '<tspan fill="%s">.</tspan></text>\n' % (G, SIGNAL))
-    s += ('<text class="dek" x="%d" y="216" font-size="17">building GENZ TECH &#8212; latest tech news, decoded.</text>\n' % G)
-    s += ('<text class="dek" x="%d" y="242" font-size="17" fill="%s">side quests: acoustic wall scanner, cost calculators, a free dev-data API.</text>\n'
+    s += ('<text class="dek" x="%d" y="212" font-size="16">building GENZ TECH &#8212; latest tech news, decoded.</text>\n' % G)
+    s += ('<text class="dek" x="%d" y="236" font-size="16" fill="%s">acoustic wall scanner &#183; cost calculators &#183; a free dev-data API.</text>\n'
           % (G, TEXTLOW))
-    s += ('<text class="meta" x="%d" y="292">NEW YORK &#183; REMOTE &#183; FULL-STACK &#183; SHIPPING</text>\n' % G)
-    s += ('<text class="mono" x="%d" y="292" font-size="12" font-weight="500" fill="%s">'
-          '<tspan fill="%s">$ </tspan>genztech.blog</text>\n' % (G + 420, TEXTMID, SIGNAL))
-    s += placeholder(W - G - 380, 92, 380, 200, "// operator.jpg")
+    s += hairline(G, 268, W - G)
+    s += ('<text class="meta" x="%d" y="298">NEW YORK &#183; REMOTE &#183; FULL-STACK</text>\n' % G)
+    s += ('<text class="mono" x="%d" y="298" font-size="12" font-weight="500" fill="%s" text-anchor="end">'
+          '<tspan fill="%s">$ </tspan>genztech.blog</text>\n' % (W - G, TEXTMID, SIGNAL))
     s += "</svg>\n"
     return s
 

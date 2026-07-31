@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="blackbrainpy - GENZ TECH">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" width="780" height="340" role="img" aria-label="blackbrainpy - GENZ TECH">
 <defs>
 <style>
 .mono{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace}
@@ -19,20 +19,17 @@
 <rect width="34" height="34" fill="#101216"/><rect width="14" height="34" fill="#ffffff" opacity="0.04"/>
 </pattern>
 </defs>
-<rect width="1200" height="340" fill="#0A0B0C"/>
-<rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
-<text class="mono" x="28" y="46" font-weight="600" font-size="24" letter-spacing="-0.02em"><tspan fill="#F2F2F0">&lt;genz</tspan><tspan fill="#FF4D00">/</tspan><tspan fill="#F2F2F0">&gt;</tspan><tspan fill="#8A8D91">tech</tspan></text>
-<text class="lab" x="250" y="44">AI  GADGETS  APPS  STARTUPS  CULTURE</text>
-<circle cx="1126" cy="40" r="3.5" fill="#FF4D00"/>
-<text class="meta" x="1138" y="44" fill="#A9ABAE">live</text>
-<line x1="28" y1="64" x2="1172" y2="64" stroke="#1D1F22" stroke-width="1"/>
+<rect width="780" height="340" fill="#0A0B0C"/>
+<rect x="0" y="0" width="780" height="2" fill="#FF4D00"/>
+<text class="mono" x="28" y="46" font-weight="600" font-size="22" letter-spacing="-0.02em"><tspan fill="#F2F2F0">&lt;genz</tspan><tspan fill="#FF4D00">/</tspan><tspan fill="#F2F2F0">&gt;</tspan><tspan fill="#8A8D91">tech</tspan></text>
+<circle cx="710" cy="40" r="3.5" fill="#FF4D00"/>
+<text class="meta" x="722" y="44" fill="#A9ABAE">live</text>
+<line x1="28" y1="64" x2="752" y2="64" stroke="#1D1F22" stroke-width="1"/>
 <text class="kick" x="28" y="112">~/ github &#183; profile</text>
-<text class="disp" x="28" y="176" font-size="60">blackbrainpy<tspan fill="#FF4D00">.</tspan></text>
-<text class="dek" x="28" y="216" font-size="17">building GENZ TECH &#8212; latest tech news, decoded.</text>
-<text class="dek" x="28" y="242" font-size="17" fill="#7D8084">side quests: acoustic wall scanner, cost calculators, a free dev-data API.</text>
-<text class="meta" x="28" y="292">NEW YORK &#183; REMOTE &#183; FULL-STACK &#183; SHIPPING</text>
-<text class="mono" x="448" y="292" font-size="12" font-weight="500" fill="#A9ABAE"><tspan fill="#FF4D00">$ </tspan>genztech.blog</text>
-<rect x="792" y="92" width="380" height="200" fill="url(#stripe)" stroke="#26282B" stroke-width="1"/>
-<path d="M792 248 L792 292 L836 292" fill="none" stroke="#FF4D00" stroke-width="2" opacity="0.85"/>
-<text class="meta" x="804" y="114" fill="#6B6E72">// operator.jpg</text>
+<text class="disp" x="28" y="172" font-size="54">blackbrainpy<tspan fill="#FF4D00">.</tspan></text>
+<text class="dek" x="28" y="212" font-size="16">building GENZ TECH &#8212; latest tech news, decoded.</text>
+<text class="dek" x="28" y="236" font-size="16" fill="#7D8084">acoustic wall scanner &#183; cost calculators &#183; a free dev-data API.</text>
+<line x1="28" y1="268" x2="752" y2="268" stroke="#1D1F22" stroke-width="1"/>
+<text class="meta" x="28" y="298">NEW YORK &#183; REMOTE &#183; FULL-STACK</text>
+<text class="mono" x="752" y="298" font-size="12" font-weight="500" fill="#A9ABAE" text-anchor="end"><tspan fill="#FF4D00">$ </tspan>genztech.blog</text>
 </svg>
