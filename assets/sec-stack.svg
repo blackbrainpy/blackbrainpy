@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="whoami">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 92" width="1200" height="92" role="img" aria-label="ls ./stack">
 <defs>
 <style>
 .mono{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace}
@@ -19,22 +19,9 @@
 <rect width="34" height="34" fill="#101216"/><rect width="14" height="34" fill="#ffffff" opacity="0.04"/>
 </pattern>
 </defs>
-<rect width="1200" height="300" fill="#0A0B0C"/>
+<rect width="1200" height="92" fill="#0A0B0C"/>
 <rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
-<rect x="28" y="28" width="1144" height="244" fill="#0E0F11" stroke="#1D1F22" stroke-width="1" rx="5"/>
-<text class="lab" x="56" y="66" fill="#6B6E72">// operator</text>
-<text class="meta" x="56" y="104">HANDLE</text>
-<text class="sans" x="218" y="104" font-size="15" fill="#C7C8CA">blackbrainpy</text>
-<text class="meta" x="56" y="134">ORG</text>
-<text class="sans" x="218" y="134" font-size="15" fill="#C7C8CA">GENZ TECH</text>
-<text class="meta" x="56" y="164">LOCATION</text>
-<text class="sans" x="218" y="164" font-size="15" fill="#C7C8CA">New York &#183; remote</text>
-<text class="meta" x="56" y="194">FOCUS</text>
-<text class="sans" x="218" y="194" font-size="15" fill="#C7C8CA">tech journalism &#183; full-stack &#183; data tooling</text>
-<text class="meta" x="56" y="224">WRITING</text>
-<text class="sans" x="218" y="224" font-size="15" fill="#C7C8CA">genztech.blog &#8212; daily tech news for Gen Z</text>
-<text class="meta" x="56" y="254">BUILDING</text>
-<text class="sans" x="218" y="254" font-size="15" fill="#C7C8CA">acoustic wall scanner &#183; repair-cost calculators &#183; public dev API</text>
-<text class="mono" x="56" y="252" font-size="13" fill="#A9ABAE"><tspan fill="#FF4D00">$ </tspan>status: shipping</text>
-<rect x="260" y="241" width="9" height="14" fill="#FF4D00" class="cur"/>
+<text class="sec" x="28" y="52"><tspan fill="#FF4D00">$ </tspan>ls ./stack</text>
+<text class="meta" x="1172" y="52" text-anchor="end">6 modules</text>
+<line x1="28" y1="72" x2="1172" y2="72" stroke="#1D1F22" stroke-width="1"/>
 </svg>

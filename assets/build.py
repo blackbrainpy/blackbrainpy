@@ -1,247 +1,216 @@
 # -*- coding: utf-8 -*-
+"""GENZ TECH 'Terminal' brand system -> profile SVGs.
+Tokens per design_handoff_genztech/README.md. No glows, no shadows,
+accent reserved. Run: python build.py"""
 import os
 D = os.path.dirname(os.path.abspath(__file__))
-SVG = {}
 
-SVG["header.svg"] = u'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="BLACKBRAINPY - GENZ TECH">
-<defs>
-<style>
-.ttl{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:104px;letter-spacing:2px}
-.mono{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace}
-@keyframes slice1{0%,86%,100%{transform:translate(0,0)}87%{transform:translate(-18px,0)}89%{transform:translate(11px,0)}90%{transform:translate(0,0)}}
-@keyframes slice2{0%,72%,100%{transform:translate(0,0)}74%{transform:translate(14px,0)}76%{transform:translate(-9px,0)}78%{transform:translate(0,0)}}
-@keyframes slice3{0%,40%,100%{transform:translate(0,0)}42%{transform:translate(-22px,0)}44%{transform:translate(6px,0)}46%{transform:translate(0,0)}}
-@keyframes flick{0%,90%,100%{opacity:1}92%{opacity:.35}94%{opacity:1}96%{opacity:.7}}
-@keyframes blip{0%,49%{opacity:1}50%,100%{opacity:.15}}
-@keyframes sweep{0%{transform:translate(0,-40px)}100%{transform:translate(0,380px)}}
-@keyframes bar{0%{width:0}100%{width:186px}}
-.g1{animation:slice1 7s infinite steps(1)}
-.g2{animation:slice2 7s infinite steps(1)}
-.g3{animation:slice3 7s infinite steps(1)}
-.fl{animation:flick 6s infinite}
-.bl{animation:blip 1.1s infinite steps(1)}
-.sw{animation:sweep 5.5s linear infinite}
-.bx{animation:bar 3s ease-out infinite alternate}
-</style>
-<pattern id="hz" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-<rect width="30" height="30" fill="#0a0a0c"/><rect width="15" height="30" fill="#FCEE0A"/>
+VOID    = "#0A0B0C"
+PANEL   = "#0E0F11"
+PANEL2  = "#101216"
+HAIR    = "#1D1F22"
+BORDER  = "#26282B"
+SIGNAL  = "#FF4D00"
+BONE    = "#F2F2F0"
+TEXTHI  = "#E7E7E5"
+BODY    = "#C7C8CA"
+TEXTMID = "#A9ABAE"
+MIST    = "#8A8D91"
+TEXTLOW = "#7D8084"
+FAINT   = "#6B6E72"
+
+MONO = "'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace"
+SANS = "'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif"
+
+CSS = """
+.mono{font-family:@MONO@}
+.sans{font-family:@SANS@}
+.disp{font-family:@MONO@;font-weight:600;letter-spacing:-0.03em;fill:@BONE@}
+.sec{font-family:@MONO@;font-weight:600;font-size:22px;letter-spacing:-0.02em;fill:@BONE@}
+.kick{font-family:@MONO@;font-weight:600;font-size:11px;letter-spacing:0.18em;fill:@SIGNAL@}
+.lab{font-family:@MONO@;font-weight:600;font-size:11px;letter-spacing:0.16em;fill:@TEXTLOW@}
+.meta{font-family:@MONO@;font-weight:500;font-size:11px;letter-spacing:0.07em;fill:@TEXTLOW@}
+.dek{font-family:@SANS@;font-size:15px;fill:@TEXTMID@}
+.hl{font-family:@SANS@;font-weight:500;font-size:19px;fill:@TEXTHI@}
+.idx{font-family:@MONO@;font-weight:600;font-size:13px;fill:@SIGNAL@}
+.val{font-family:@MONO@;font-weight:600;font-size:34px;fill:@BONE@}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.cur{animation:blink 1.1s steps(1) infinite}
+""".replace("@MONO@", MONO).replace("@SANS@", SANS).replace("@BONE@", BONE
+    ).replace("@SIGNAL@", SIGNAL).replace("@TEXTLOW@", TEXTLOW).replace(
+    "@TEXTMID@", TEXTMID).replace("@TEXTHI@", TEXTHI)
+
+DEFS = """<defs>
+<style>@CSS@</style>
+<pattern id="stripe" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(135)">
+<rect width="34" height="34" fill="@PANEL2@"/><rect width="14" height="34" fill="#ffffff" opacity="0.04"/>
 </pattern>
-<pattern id="sl" width="3" height="3" patternUnits="userSpaceOnUse">
-<rect width="3" height="1.4" fill="#000" opacity="0.5"/>
-</pattern>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M40 0H0V40" fill="none" stroke="#FCEE0A" stroke-width="0.5" opacity="0.10"/>
-</pattern>
-<clipPath id="c1"><rect x="0" y="118" width="1200" height="26"/></clipPath>
-<clipPath id="c2"><rect x="0" y="158" width="1200" height="20"/></clipPath>
-<clipPath id="c3"><rect x="0" y="192" width="1200" height="24"/></clipPath>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="9"/>
-<feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.10"/></feComponentTransfer></filter>
-<linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0" stop-color="#FCEE0A" stop-opacity="0"/><stop offset="0.5" stop-color="#FCEE0A" stop-opacity="1"/><stop offset="1" stop-color="#FCEE0A" stop-opacity="0"/>
-</linearGradient>
-</defs>
-<rect width="1200" height="340" fill="#08070a"/>
-<rect width="1200" height="340" fill="url(#grid)"/>
-<rect x="0" y="0" width="1200" height="12" fill="url(#hz)"/>
-<rect x="0" y="328" width="1200" height="12" fill="url(#hz)"/>
-<g class="mono" fill="#FCEE0A" opacity="0.55" font-size="11" letter-spacing="3">
-<text x="42" y="46">SYS.LINK // ESTABLISHED</text>
-<text x="42" y="64" opacity="0.6">NODE 291556072 . SECTOR NYC . REL 2.0.77</text>
-</g>
-<circle cx="34" cy="42" r="4" fill="#FF003C" class="bl"/>
-<g class="mono" fill="#FCEE0A" opacity="0.5" font-size="11" letter-spacing="3" text-anchor="end">
-<text x="1158" y="46">STATUS . SHIPPING</text>
-<text x="1158" y="64" opacity="0.6">UPTIME 100% . PING 4ms</text>
-</g>
-<g transform="translate(64,286)" class="mono">
-<text x="0" y="0" font-size="11" fill="#FCEE0A" opacity="0.5" letter-spacing="3">NEURAL LOAD</text>
-<rect x="0" y="8" width="186" height="6" fill="#FCEE0A" opacity="0.15"/>
-<rect x="0" y="8" height="6" fill="#FCEE0A" class="bx"/>
-</g>
-<g transform="translate(1158,296)" class="mono" text-anchor="end">
-<text x="0" y="0" font-size="11" fill="#FF003C" opacity="0.7" letter-spacing="3">CYBERPSYCHOSIS: NOMINAL</text>
-</g>
-<g class="fl">
-<text class="ttl" x="60" y="212" fill="#00E5FF" opacity="0.9" transform="translate(-5,0)">BLACKBRAINPY</text>
-<text class="ttl" x="60" y="212" fill="#FF003C" opacity="0.9" transform="translate(5,0)">BLACKBRAINPY</text>
-<text class="ttl" x="60" y="212" fill="#FCEE0A">BLACKBRAINPY</text>
-</g>
-<g clip-path="url(#c1)" class="g1"><text class="ttl" x="60" y="212" fill="#FF003C" opacity="0.95">BLACKBRAINPY</text></g>
-<g clip-path="url(#c2)" class="g2"><text class="ttl" x="60" y="212" fill="#00E5FF" opacity="0.95">BLACKBRAINPY</text></g>
-<g clip-path="url(#c3)" class="g3"><text class="ttl" x="60" y="212" fill="#FCEE0A">BLACKBRAINPY</text></g>
-<rect x="60" y="228" width="880" height="2" fill="url(#fade)" opacity="0.7"/>
-<text class="mono" x="62" y="258" font-size="15" letter-spacing="3">
-<tspan fill="#FCEE0A" opacity="0.95">GENZ TECH</tspan><tspan fill="#FF003C" opacity="0.9">   //   </tspan><tspan fill="#e8e6df" opacity="0.8">DAILY TECH NEWS FOR GEN Z</tspan><tspan fill="#FF003C" opacity="0.9">   //   </tspan><tspan fill="#FCEE0A" opacity="0.95">genztech.blog</tspan>
-</text>
-<g transform="translate(1052,158)" opacity="0.5">
-<g stroke="#FCEE0A" fill="none" stroke-width="1.2">
-<circle cx="0" cy="0" r="56" opacity="0.35"/><circle cx="0" cy="0" r="38" opacity="0.55"/>
-<path d="M0 -70 L0 -60 M0 60 L0 70 M-70 0 L-60 0 M60 0 L70 0" stroke-width="2"/>
-<path d="M-38 -38 A54 54 0 0 1 38 -38" stroke="#FF003C" opacity="0.8" stroke-width="2"/>
-<path d="M-38 38 A54 54 0 0 0 38 38" stroke="#00E5FF" opacity="0.7" stroke-width="2"/>
-</g>
-<circle cx="0" cy="0" r="5" fill="#FCEE0A" class="bl"/>
-<text class="mono" x="0" y="90" font-size="10" letter-spacing="4" fill="#FCEE0A" text-anchor="middle" opacity="0.7">EDGERUNNER</text>
-</g>
-<g stroke="#FCEE0A" stroke-width="2.5" fill="none" opacity="0.9">
-<path d="M28 92 L28 78 L52 78"/><path d="M1172 92 L1172 78 L1148 78"/>
-<path d="M28 274 L28 288 L52 288"/><path d="M1172 274 L1172 288 L1148 288"/>
-</g>
-<rect x="0" y="0" width="1200" height="4" fill="#00E5FF" opacity="0.25" class="sw"/>
-<rect width="1200" height="340" fill="url(#sl)" opacity="0.55"/>
-<rect width="1200" height="340" filter="url(#grain)" opacity="0.6"/>
-</svg>
-'''
+</defs>""".replace("@CSS@", CSS).replace("@PANEL2@", PANEL2)
 
-BARS = [("PYTHON",92),("JAVASCRIPT",88),("HTML / CSS",90),("NODE.JS",78),
-        ("GIT",85),("GH ACTIONS",72),("VERCEL",70),("JSON / REST",82),("MARKDOWN",95)]
 
-def arsenal():
-    kf, cls, cells = [], [], []
-    for i,(name,pct) in enumerate(BARS,1):
-        w = round(240*pct/100.0)
-        kf.append("@keyframes w%d{0%%{width:0}100%%{width:%dpx}}" % (i,w))
-        cls.append(".b%d{animation:w%d %.1fs ease-out forwards}" % (i,i,1.7+i*0.1))
-        x = 60 + (i-1)%3*390
-        y = 72 + ((i-1)//3)*95
-        cells.append(
-            '<g transform="translate(%d,%d)">\n'
-            '<text class="n" x="0" y="0">%s</text>\n'
-            '<rect x="0" y="10" width="240" height="7" fill="#FCEE0A" opacity="0.14"/>\n'
-            '<rect x="0" y="10" height="7" fill="#FCEE0A" class="b%d"/>\n'
-            '<text class="m" x="252" y="17" fill="#FCEE0A" opacity="0.6">%d</text>\n</g>'
-            % (x,y,name,i,pct))
-    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Arsenal">\n'
-        '<defs>\n<style>\n'
-        ".n{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:16px;letter-spacing:2px;fill:#FCEE0A}\n"
-        ".m{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:11px;letter-spacing:2px}\n"
-        + "\n".join(kf) + "\n@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.12}}\n"
-        + "\n".join(cls) + "\n.bk{animation:bl 1.2s infinite steps(1)}\n</style>\n"
-        '<pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse">'
-        '<path d="M40 0H0V40" fill="none" stroke="#FCEE0A" stroke-width="0.5" opacity="0.08"/></pattern>\n'
-        '<pattern id="sc" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>\n'
-        '</defs>\n<rect width="1200" height="330" fill="#08070a"/>\n<rect width="1200" height="330" fill="url(#gr)"/>\n'
-        '<rect x="40" y="26" width="3" height="278" fill="#FCEE0A" opacity="0.5"/>\n'
-        '<text class="m" x="60" y="34" fill="#FCEE0A" opacity="0.45">MODULE SCAN // 9 SUBSYSTEMS DETECTED</text>\n'
-        '<circle cx="1152" cy="30" r="3.5" fill="#FF003C" class="bk"/>\n'
-        '<text class="m" x="1140" y="34" fill="#FCEE0A" opacity="0.45" text-anchor="end">LIVE</text>\n'
-        + "\n".join(cells) +
-        '\n<g stroke="#FCEE0A" stroke-width="2" fill="none" opacity="0.8">'
-        '<path d="M1160 20 L1176 20 L1176 36"/><path d="M1160 310 L1176 310 L1176 294"/></g>\n'
-        '<rect width="1200" height="330" fill="url(#sc)" opacity="0.5"/>\n</svg>\n')
+def head(w, h, label):
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" '
+            'role="img" aria-label="%s">\n%s\n<rect width="%d" height="%d" fill="%s"/>\n'
+            '<rect x="0" y="0" width="%d" height="2" fill="%s"/>\n'
+            % (w, h, w, h, label, DEFS, w, h, VOID, w, SIGNAL))
 
-SVG["arsenal.svg"] = arsenal()
 
-SVG["dossier.svg"] = u'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Operator dossier">
-<defs>
-<style>
-.lb{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:11px;letter-spacing:3px;fill:#FCEE0A;opacity:.55}
-.vl{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:17px;letter-spacing:1px;fill:#EDEAE0}
-.sm{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:13px;fill:#EDEAE0;opacity:.75}
-.tg{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:13px;letter-spacing:3px;fill:#08070a}
-@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.12}}
-@keyframes sw{0%{transform:translate(0,0)}100%{transform:translate(0,220px)}}
-@keyframes st{0%{width:0}100%{width:300px}}
-.bk{animation:bl 1.2s infinite steps(1)}
-.scn{animation:sw 3.4s linear infinite}
-.stt{animation:st 2.8s ease-out forwards}
-</style>
-<pattern id="gr2" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M40 0H0V40" fill="none" stroke="#FCEE0A" stroke-width="0.5" opacity="0.08"/></pattern>
-<pattern id="sc2" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>
-<pattern id="bc" width="22" height="34" patternUnits="userSpaceOnUse">
-<rect x="0" y="0" width="2" height="34" fill="#FCEE0A"/><rect x="4" y="0" width="1" height="34" fill="#FCEE0A"/>
-<rect x="7" y="0" width="3" height="34" fill="#FCEE0A"/><rect x="12" y="0" width="1" height="34" fill="#FCEE0A"/>
-<rect x="15" y="0" width="2" height="34" fill="#FCEE0A"/><rect x="19" y="0" width="1" height="34" fill="#FCEE0A"/></pattern>
-<clipPath id="pf"><rect x="60" y="52" width="200" height="220"/></clipPath>
-</defs>
-<rect width="1200" height="330" fill="#08070a"/>
-<rect width="1200" height="330" fill="url(#gr2)"/>
-<g clip-path="url(#pf)">
-<rect x="60" y="52" width="200" height="220" fill="#100e14"/>
-<g stroke="#FCEE0A" stroke-width="1" opacity="0.35" fill="none">
-<circle cx="160" cy="130" r="46"/><circle cx="160" cy="130" r="30"/>
-<path d="M160 60 L160 200 M90 130 L230 130"/>
-</g>
-<text x="160" y="228" class="lb" text-anchor="middle" style="opacity:.7">NO VISUAL ON FILE</text>
-<text x="160" y="246" class="lb" text-anchor="middle" style="opacity:.4">REF 291556072</text>
-<rect x="60" y="52" width="200" height="3" fill="#00E5FF" opacity="0.5" class="scn"/>
-</g>
-<rect x="60" y="52" width="200" height="220" fill="none" stroke="#FCEE0A" stroke-width="2" opacity="0.85"/>
-<g stroke="#FF003C" stroke-width="3" fill="none">
-<path d="M60 76 L60 52 L84 52"/><path d="M236 272 L260 272 L260 248"/>
-</g>
-<rect x="60" y="284" width="200" height="24" fill="#FCEE0A"/>
-<text class="tg" x="160" y="301" text-anchor="middle">OPERATOR ID</text>
-<g transform="translate(320,0)">
-<text class="lb" x="0" y="66">HANDLE</text><text class="vl" x="150" y="68">blackbrainpy</text>
-<text class="lb" x="0" y="104">ORG</text><text class="vl" x="150" y="106">GENZ TECH</text>
-<text class="lb" x="0" y="142">SECTOR</text><text class="vl" x="150" y="144">NEW YORK // REMOTE</text>
-<text class="lb" x="0" y="180">CLASS</text><text class="vl" x="150" y="182">NETRUNNER . FULL-STACK</text>
-<text class="lb" x="0" y="218">MAIN QUEST</text><text class="sm" x="150" y="220">genztech.blog - daily tech news for Gen Z</text>
-<text class="lb" x="0" y="248">SIDE QUESTS</text><text class="sm" x="150" y="250">acoustic wall scanner (tap-mapper)</text>
-<text class="sm" x="150" y="270">home repair cost calculators . free public dev API</text>
-<line x1="0" y1="80" x2="780" y2="80" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
-<line x1="0" y1="118" x2="780" y2="118" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
-<line x1="0" y1="156" x2="780" y2="156" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
-<line x1="0" y1="194" x2="780" y2="194" stroke="#FCEE0A" stroke-width="1" opacity="0.12"/>
-<text class="lb" x="0" y="298">STATUS</text>
-<rect x="150" y="288" width="300" height="8" fill="#FCEE0A" opacity="0.14"/>
-<rect x="150" y="288" height="8" fill="#FCEE0A" class="stt"/>
-<text class="lb" x="466" y="298" style="opacity:.9">SHIPPING</text>
-<circle cx="566" cy="294" r="4" fill="#FF003C" class="bk"/>
-</g>
-<rect x="1096" y="52" width="66" height="34" fill="url(#bc)" opacity="0.8"/>
-<text class="lb" x="1162" y="100" text-anchor="end">SCAN VALID</text>
-<g stroke="#FCEE0A" stroke-width="2" fill="none" opacity="0.8">
-<path d="M1160 24 L1176 24 L1176 40"/><path d="M1160 310 L1176 310 L1176 294"/>
-</g>
-<rect width="1200" height="330" fill="url(#sc2)" opacity="0.5"/>
-</svg>
-'''
+def wordmark(x, y, size=26, cursor=False):
+    """<genz/>tech - slash always Signal, 'tech' in Mist."""
+    s = ('<text class="mono" x="%d" y="%d" font-weight="600" font-size="%d" letter-spacing="-0.02em">'
+         '<tspan fill="%s">&lt;genz</tspan><tspan fill="%s">/</tspan>'
+         '<tspan fill="%s">&gt;</tspan><tspan fill="%s">tech</tspan></text>\n'
+         % (x, y, size, BONE, SIGNAL, BONE, MIST))
+    if cursor:
+        s += ('<rect x="%d" y="%d" width="%d" height="%d" fill="%s" class="cur"/>\n'
+              % (x + int(size * 6.05), y - int(size * 0.78), int(size * 0.42), int(size * 0.86), SIGNAL))
+    return s
 
-SVG["footer.svg"] = u'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Stay jacked in">
-<defs>
-<style>
-.f{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:58px;letter-spacing:4px}
-.m2{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace;font-size:11px;letter-spacing:3px}
-@keyframes gl{0%,88%,100%{transform:translate(0,0)}89%{transform:translate(-14px,0)}91%{transform:translate(8px,0)}92%{transform:translate(0,0)}}
-@keyframes fk{0%,92%,100%{opacity:1}93%{opacity:.3}95%{opacity:1}}
-@keyframes bl2{0%,49%{opacity:1}50%,100%{opacity:.1}}
-.gg{animation:gl 6s infinite steps(1)}
-.ff{animation:fk 5s infinite}
-.b2{animation:bl2 1.4s infinite steps(1)}
-</style>
-<pattern id="hz2" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-<rect width="30" height="30" fill="#0a0a0c"/><rect width="15" height="30" fill="#FCEE0A"/></pattern>
-<pattern id="sc3" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.5"/></pattern>
-<clipPath id="fc"><rect x="0" y="88" width="1200" height="18"/></clipPath>
-<linearGradient id="fd2" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0" stop-color="#FCEE0A" stop-opacity="0"/><stop offset="0.5" stop-color="#FCEE0A" stop-opacity="0.8"/><stop offset="1" stop-color="#FCEE0A" stop-opacity="0"/></linearGradient>
-</defs>
-<rect width="1200" height="200" fill="#08070a"/>
-<rect x="0" y="0" width="1200" height="12" fill="url(#hz2)"/>
-<rect x="0" y="188" width="1200" height="12" fill="url(#hz2)"/>
-<g class="ff" text-anchor="middle">
-<text class="f" x="600" y="112" fill="#00E5FF" opacity="0.85" transform="translate(-4,0)">STAY JACKED IN.</text>
-<text class="f" x="600" y="112" fill="#FF003C" opacity="0.85" transform="translate(4,0)">STAY JACKED IN.</text>
-<text class="f" x="600" y="112" fill="#FCEE0A">STAY JACKED IN.</text>
-</g>
-<g clip-path="url(#fc)" class="gg" text-anchor="middle">
-<text class="f" x="600" y="112" fill="#FF003C">STAY JACKED IN.</text>
-</g>
-<rect x="200" y="130" width="800" height="2" fill="url(#fd2)"/>
-<text class="m2" x="600" y="158" fill="#FCEE0A" opacity="0.5" text-anchor="middle">genztech.blog . @genztechblog . github.com/blackbrainpy</text>
-<circle cx="34" cy="36" r="4" fill="#FF003C" class="b2"/>
-<text class="m2" x="50" y="40" fill="#FCEE0A" opacity="0.45">CONNECTION TERMINATED</text>
-<text class="m2" x="1166" y="40" fill="#FCEE0A" opacity="0.45" text-anchor="end">EOF // 0x7F</text>
-<rect width="1200" height="200" fill="url(#sc3)" opacity="0.5"/>
-</svg>
-'''
 
-for name, body in SVG.items():
-    p = os.path.join(D, name)
-    with open(p, "wb") as fh:
+def hairline(x1, y, x2):
+    return '<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="1"/>\n' % (x1, y, x2, y, HAIR)
+
+
+def placeholder(x, y, w, h, caption):
+    """Striped image placeholder + L corner tick + mono caption."""
+    return ('<rect x="%d" y="%d" width="%d" height="%d" fill="url(#stripe)" stroke="%s" stroke-width="1"/>\n'
+            '<path d="M%d %d L%d %d L%d %d" fill="none" stroke="%s" stroke-width="2" opacity="0.85"/>\n'
+            '<text class="meta" x="%d" y="%d" fill="%s">%s</text>\n'
+            % (x, y, w, h, BORDER,
+               x, y + h - 44, x, y + h, x + 44, y + h, SIGNAL,
+               x + 12, y + 22, FAINT, caption))
+
+
+def live(x, y):
+    return ('<circle cx="%d" cy="%d" r="3.5" fill="%s"/>\n'
+            '<text class="meta" x="%d" y="%d" fill="%s">live</text>\n'
+            % (x, y - 4, SIGNAL, x + 12, y, TEXTMID))
+
+
+def header():
+    W, H = 1200, 340
+    G = 28
+    s = head(W, H, "blackbrainpy - GENZ TECH")
+    s += wordmark(G, 46, 24)
+    s += ('<text class="lab" x="250" y="44">AI  GADGETS  APPS  STARTUPS  CULTURE</text>\n')
+    s += live(W - G - 46, 44)
+    s += hairline(G, 64, W - G)
+    s += '<text class="kick" x="%d" y="112">~/ github &#183; profile</text>\n' % G
+    s += ('<text class="disp" x="%d" y="176" font-size="60">blackbrainpy'
+          '<tspan fill="%s">.</tspan></text>\n' % (G, SIGNAL))
+    s += ('<text class="dek" x="%d" y="216" font-size="17">building GENZ TECH &#8212; latest tech news, decoded.</text>\n' % G)
+    s += ('<text class="dek" x="%d" y="242" font-size="17" fill="%s">side quests: acoustic wall scanner, cost calculators, a free dev-data API.</text>\n'
+          % (G, TEXTLOW))
+    s += ('<text class="meta" x="%d" y="292">NEW YORK &#183; REMOTE &#183; FULL-STACK &#183; SHIPPING</text>\n' % G)
+    s += ('<text class="mono" x="%d" y="292" font-size="12" font-weight="500" fill="%s">'
+          '<tspan fill="%s">$ </tspan>genztech.blog</text>\n' % (G + 420, TEXTMID, SIGNAL))
+    s += placeholder(W - G - 380, 92, 380, 200, "// operator.jpg")
+    s += "</svg>\n"
+    return s
+
+
+def section(slug, cmd, right, num):
+    W, H = 1200, 92
+    G = 28
+    s = head(W, H, cmd)
+    s += ('<text class="sec" x="%d" y="52"><tspan fill="%s">$ </tspan>%s</text>\n' % (G, SIGNAL, cmd))
+    s += ('<text class="meta" x="%d" y="52" text-anchor="end">%s</text>\n' % (W - G, right))
+    s += hairline(G, 72, W - G)
+    s += "</svg>\n"
+    return s
+
+
+def dossier():
+    W, H = 1200, 300
+    G = 28
+    rows = [("handle", "blackbrainpy"),
+            ("org", "GENZ TECH"),
+            ("location", "New York &#183; remote"),
+            ("focus", "tech journalism &#183; full-stack &#183; data tooling"),
+            ("writing", "genztech.blog &#8212; daily tech news for Gen Z"),
+            ("building", "acoustic wall scanner &#183; repair-cost calculators &#183; public dev API")]
+    s = head(W, H, "whoami")
+    s += ('<rect x="%d" y="28" width="%d" height="%d" fill="%s" stroke="%s" stroke-width="1" rx="5"/>\n'
+          % (G, W - 2 * G, H - 56, PANEL, HAIR))
+    s += '<text class="lab" x="%d" y="66" fill="%s">// operator</text>\n' % (G + 28, FAINT)
+    for i, (k, v) in enumerate(rows):
+        y = 104 + i * 30
+        s += '<text class="meta" x="%d" y="%d">%s</text>\n' % (G + 28, y, k.upper())
+        s += ('<text class="sans" x="%d" y="%d" font-size="15" fill="%s">%s</text>\n'
+              % (G + 190, y, BODY, v))
+    s += ('<text class="mono" x="%d" y="252" font-size="13" fill="%s">'
+          '<tspan fill="%s">$ </tspan>status: shipping</text>\n' % (G + 28, TEXTMID, SIGNAL))
+    s += ('<rect x="%d" y="241" width="9" height="14" fill="%s" class="cur"/>\n' % (G + 232, SIGNAL))
+    s += "</svg>\n"
+    return s
+
+
+STACK = [("python", "scrapers, data pipelines, the API build"),
+         ("javascript", "site logic, interactive explainers"),
+         ("html / css", "the genztech.blog front end"),
+         ("node.js", "tooling and build steps"),
+         ("git / github actions", "everything ships on a schedule"),
+         ("json / rest", "the free public dev-data API")]
+
+
+def stack():
+    """Numbered terminal rows - Signal index, name, dek. Brand 'Latest' pattern."""
+    W = 1200
+    G = 28
+    H = 40 + len(STACK) * 52 + 20
+    s = head(W, H, "stack")
+    for i, (name, note) in enumerate(STACK):
+        y = 62 + i * 52
+        s += '<text class="idx" x="%d" y="%d">%02d</text>\n' % (G, y, i + 1)
+        s += ('<text class="mono" x="%d" y="%d" font-size="16" font-weight="600" fill="%s">%s</text>\n'
+              % (G + 46, y, BONE, name))
+        s += ('<text class="sans" x="%d" y="%d" font-size="14" fill="%s">%s</text>\n'
+              % (G + 300, y, TEXTMID, note))
+        s += hairline(G, y + 20, W - G)
+    s += "</svg>\n"
+    return s
+
+
+def footer():
+    W, H = 1200, 260
+    G = 28
+    s = head(W, H, "subscribe")
+    s += ('<rect x="%d" y="24" width="%d" height="150" fill="%s" stroke="%s" stroke-width="1" rx="5"/>\n'
+          % (G, W - 2 * G, PANEL, HAIR))
+    s += '<text class="lab" x="%d" y="60" fill="%s">// newsletter</text>\n' % (G + 28, FAINT)
+    s += ('<text class="sec" x="%d" y="98" font-size="30"><tspan fill="%s">$ </tspan>subscribe --weekly</text>\n'
+          % (G + 28, SIGNAL))
+    s += ('<text class="sans" x="%d" y="126" font-size="15" fill="%s">'
+          'the tech that actually mattered this week. no hype, no filler.</text>\n' % (G + 28, TEXTMID))
+    s += ('<rect x="%d" y="86" width="300" height="40" fill="none" stroke="%s" stroke-width="1" rx="3"/>\n'
+          % (W - G - 340, BORDER))
+    s += ('<text class="mono" x="%d" y="112" font-size="13" fill="%s">'
+          '<tspan fill="%s">&#8594; </tspan>genztech.blog</text>\n' % (W - G - 322, FAINT, SIGNAL))
+    s += ('<text class="meta" x="%d" y="152" fill="%s">// built on the internet &#183; ships daily</text>\n'
+          % (G + 28, FAINT))
+    s += hairline(G, 206, W - G)
+    s += wordmark(G, 240, 16)
+    s += ('<text class="meta" x="%d" y="240" text-anchor="end" fill="%s">'
+          '&#169; 2026 GENZ TECH &#183; // status: all systems operational</text>\n' % (W - G, FAINT))
+    s += "</svg>\n"
+    return s
+
+
+def write(name, body):
+    with open(os.path.join(D, name), "wb") as fh:
         fh.write(body.encode("utf-8"))
-    print("wrote %-16s %6d bytes" % (name, len(body.encode("utf-8"))))
+    print("wrote %-22s %6d bytes" % (name, len(body.encode("utf-8"))))
+
+
+if __name__ == "__main__":
+    write("header.svg", header())
+    write("dossier.svg", dossier())
+    write("arsenal.svg", stack())
+    write("footer.svg", footer())
+    for slug, cmd, right, n in [
+            ("stack", "ls ./stack", "6 modules", "01"),
+            ("builds", "ls ./builds", "public repos", "02"),
+            ("streams", "git log --stat", "rolling 12 months", "03"),
+            ("ice", "cat ./contributions", "12h refresh", "04"),
+            ("transmission", "curl ./transmission", "channel open", "05")]:
+        write("sec-%s.svg" % slug, section(slug, cmd, right, n))

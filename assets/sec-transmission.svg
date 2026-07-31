@@ -1,27 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 78" width="1200" height="78" role="img" aria-label="TRANSMISSION">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 92" width="1200" height="92" role="img" aria-label="curl ./transmission">
 <defs>
 <style>
-.hd{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:30px;letter-spacing:5px}
-.nm{font-family:'Arial Black','Helvetica Neue',Impact,sans-serif;font-weight:900;font-size:40px}
-.mn{font-family:'Consolas','SF Mono','DejaVu Sans Mono',monospace}
-@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:.1}}
-@keyframes ru{0%{width:0}100%{width:304px}}
-.b{animation:bl 1.3s infinite steps(1)}
-.r{animation:ru 2.4s ease-out forwards}
+.mono{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace}
+.sans{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif}
+.disp{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;letter-spacing:-0.03em;fill:#F2F2F0}
+.sec{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;font-size:22px;letter-spacing:-0.02em;fill:#F2F2F0}
+.kick{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;font-size:11px;letter-spacing:0.18em;fill:#FF4D00}
+.lab{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;font-size:11px;letter-spacing:0.16em;fill:#7D8084}
+.meta{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:500;font-size:11px;letter-spacing:0.07em;fill:#7D8084}
+.dek{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:15px;fill:#A9ABAE}
+.hl{font-family:'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:19px;fill:#E7E7E5}
+.idx{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;font-size:13px;fill:#FF4D00}
+.val{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace;font-weight:600;font-size:34px;fill:#F2F2F0}
+@keyframes blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+.cur{animation:blink 1.1s steps(1) infinite}
 </style>
-<pattern id="h05" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-<rect width="24" height="24" fill="#08070a"/><rect width="12" height="24" fill="#FCEE0A"/></pattern>
-<pattern id="s05" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1.4" fill="#000" opacity="0.45"/></pattern>
+<pattern id="stripe" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(135)">
+<rect width="34" height="34" fill="#101216"/><rect width="14" height="34" fill="#ffffff" opacity="0.04"/>
+</pattern>
 </defs>
-<rect width="1200" height="78" fill="#08070a"/>
-<rect x="0" y="0" width="14" height="78" fill="url(#h05)"/>
-<text class="nm" x="36" y="52" fill="#FCEE0A" opacity="0.28">05</text>
-<text class="hd" x="102" y="50" fill="#FCEE0A">TRANSMISSION</text>
-<text class="hd" x="102" y="50" fill="#FF003C" opacity="0.5" transform="translate(3,0)">TRANSMISSION</text>
-<text class="hd" x="102" y="50" fill="#FCEE0A">TRANSMISSION</text>
-<rect x="102" y="62" height="3" fill="#FCEE0A" class="r"/>
-<g class="mn" fill="#FCEE0A" opacity="0.45" font-size="11" letter-spacing="3" text-anchor="end">
-<text x="1176" y="36">CHANNEL OPEN</text><text x="1176" y="56" opacity="0.7">ENCRYPTION: NONE</text></g>
-<circle cx="1188" cy="32" r="3.5" fill="#FF003C" class="b"/>
-<rect width="1200" height="78" fill="url(#s05)" opacity="0.5"/>
+<rect width="1200" height="92" fill="#0A0B0C"/>
+<rect x="0" y="0" width="1200" height="2" fill="#FF4D00"/>
+<text class="sec" x="28" y="52"><tspan fill="#FF4D00">$ </tspan>curl ./transmission</text>
+<text class="meta" x="1172" y="52" text-anchor="end">channel open</text>
+<line x1="28" y1="72" x2="1172" y2="72" stroke="#1D1F22" stroke-width="1"/>
 </svg>
