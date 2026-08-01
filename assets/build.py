@@ -136,7 +136,8 @@ def chip(label):
 LINKS = [("genztech.blog", "site"),
          ("x / genztechblog", "x"),
          ("instagram / genztech.blog", "ig"),
-         ("tiktok / genztech.blog", "tt")]
+         ("tiktok / genztech.blog", "tt"),
+         ("info@genztech.blog", "mail")]
 
 
 def section(slug, cmd, right, num):
