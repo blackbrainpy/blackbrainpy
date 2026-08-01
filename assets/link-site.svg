@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 40" width="146" height="40" role="img" aria-label="genztech.blog">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 40" width="156" height="40" role="img" aria-label="genztech.blog">
 <defs>
 <style>
 .mono{font-family:'IBM Plex Mono','SF Mono','Consolas','DejaVu Sans Mono',monospace}
@@ -19,8 +19,8 @@
 <rect width="34" height="34" fill="#101216"/><rect width="14" height="34" fill="#ffffff" opacity="0.04"/>
 </pattern>
 </defs>
-<rect width="146" height="40" fill="#0A0B0C"/>
-<rect x="0.5" y="0.5" width="145" height="39" rx="3" fill="#0E0F11" stroke="#26282B" stroke-width="1"/>
-<text class="mono" x="16" y="25" font-size="12" font-weight="600" fill="#FF4D00">&#8594;</text>
-<text class="mono" x="34" y="25" font-size="12" font-weight="500" letter-spacing="0.06em" fill="#A9ABAE">genztech.blog</text>
+<rect width="156" height="40" fill="#0A0B0C"/>
+<rect x="0.5" y="0.5" width="155" height="39" rx="3" fill="#0E0F11" stroke="#26282B" stroke-width="1"/>
+<g transform="translate(14,12)" fill="none" stroke="#FF4D00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.6"/><ellipse cx="8" cy="8" rx="3" ry="6.6"/><path d="M1.6 8 H14.4"/></g>
+<text class="mono" x="40" y="25" font-size="12" font-weight="500" letter-spacing="0.06em" fill="#A9ABAE">genztech.blog</text>
 </svg>
