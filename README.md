@@ -4,11 +4,11 @@
 </p>
 
 <p>
-<a href="https://genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-site.svg" alt="genztech.blog" /></a>
-<a href="https://x.com/genztechblog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-x.svg" alt="x.com/genztechblog" /></a>
-<a href="https://instagram.com/genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-ig.svg" alt="instagram.com/genztech.blog" /></a>
-<a href="https://tiktok.com/@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-tt.svg" alt="tiktok.com/@genztech.blog" /></a>
-<a href="mailto:info@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-mail.svg" alt="info@genztech.blog" /></a>
+<a href="https://genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-site-v2.svg" alt="genztech.blog" /></a>
+<a href="https://x.com/genztechblog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-x-v2.svg" alt="x.com/genztechblog" /></a>
+<a href="mailto:info@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-mail-v2.svg" alt="info@genztech.blog" /></a>
+<a href="https://instagram.com/genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-ig-v2.svg" alt="instagram.com/genztech.blog" /></a>
+<a href="https://tiktok.com/@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-tt-v2.svg" alt="tiktok.com/@genztech.blog" /></a>
 </p>
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/dossier.svg" width="100%" alt="whoami" />

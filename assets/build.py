@@ -118,15 +118,21 @@ def header():
 
 
 def icon(kind, x, y, col):
-    """Monoline platform marks, drawn in a 16x16 box. Brand calls for
-    minimal monochrome icons, so these are strokes, not brand-colour logos."""
-    g = '<g transform="translate(%d,%d)" fill="none" stroke="%s" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' % (x, y, col)
+    """Platform marks in a 16x16 box, monochrome per the brand's icon rule.
+    The X mark is the real angular glyph (filled), not two crossed strokes -
+    a plain cross reads as a close/dismiss button."""
+    if kind == "x":
+        # official X geometry on a 24u grid, scaled to the 16u box
+        return ('<g transform="translate(%d,%d) scale(0.6667)" fill="%s" stroke="none">'
+                '<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817'
+                'L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833'
+                'L7.084 4.126H5.117z"/></g>\n' % (x, y, col))
+    g = ('<g transform="translate(%d,%d)" fill="none" stroke="%s" stroke-width="1.5" '
+         'stroke-linecap="round" stroke-linejoin="round">' % (x, y, col))
     if kind == "site":                     # globe
         g += ('<circle cx="8" cy="8" r="6.6"/>'
               '<ellipse cx="8" cy="8" rx="3" ry="6.6"/>'
               '<path d="M1.6 8 H14.4"/>')
-    elif kind == "x":                      # X wordmark glyph
-        g += '<path d="M2.4 2.4 L13.6 13.6"/><path d="M13.6 2.4 L2.4 13.6"/>'
     elif kind == "ig":                     # camera body + lens + flash
         g += ('<rect x="1.4" y="1.4" width="13.2" height="13.2" rx="4"/>'
               '<circle cx="8" cy="8" r="3.4"/>'
@@ -156,11 +162,15 @@ def chip(label, kind):
     return s
 
 
+# Labels trimmed so all five fit one ~880px README line instead of orphaning
+# the email chip on a second row. Email sits centre of the run.
+# Filenames carry -v2: GitHub's camo proxy caches by URL, so overwriting in
+# place keeps serving the old icon-less chips.
 LINKS = [("genztech.blog", "site"),
-         ("x / genztechblog", "x"),
-         ("instagram / genztech.blog", "ig"),
-         ("tiktok / genztech.blog", "tt"),
-         ("info@genztech.blog", "mail")]
+         ("@genztechblog", "x"),
+         ("info@genztech.blog", "mail"),
+         ("instagram", "ig"),
+         ("tiktok", "tt")]
 
 
 def section(slug, cmd, right, num):
@@ -263,7 +273,7 @@ if __name__ == "__main__":
     write("arsenal.svg", stack())
     write("footer.svg", footer())
     for label, slug in LINKS:
-        write("link-%s.svg" % slug, chip(label, slug))
+        write("link-%s-v2.svg" % slug, chip(label, slug))
     for slug, cmd, right, n in [
             ("stack", "ls ./stack", "6 modules", "01"),
             ("builds", "ls ./builds", "public repos", "02"),
