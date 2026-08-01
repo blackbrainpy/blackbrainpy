@@ -1,5 +1,5 @@
-﻿<p>
-<img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/header.svg" width="66%" alt="blackbrainpy â€” GENZ TECH" />
+<p>
+<img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/header.svg" width="66%" alt="blackbrainpy - GENZ TECH" />
 <img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/operator-v2.gif" width="32%" alt="// operator.gif" />
 </p>
 
@@ -11,9 +11,7 @@
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-builds.svg" width="100%" alt="$ ls ./builds" />
 
-<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/builds.svg" width="100%" alt="Public repos" />
-
-**[genztech-api](https://github.com/blackbrainpy/genztech-api)** Â· **[portfolio](https://github.com/blackbrainpy/portfolio)** Â· **[blackhole-demo](https://github.com/blackbrainpy/blackhole-demo)** Â· **[tetherball-zero](https://github.com/blackbrainpy/tetherball-zero)**
+<a href="https://github.com/blackbrainpy?tab=repositories"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/builds.svg" width="100%" alt="Public repos" /></a>
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-streams.svg" width="100%" alt="$ git log --stat" />
 
@@ -32,13 +30,11 @@ $ curl -s https://genztech.blog/feed
   200 OK   latest tech news, decoded. no hype, no filler.
 
 $ curl -s https://github.com/blackbrainpy/genztech-api
-  200 OK   free JSON/CSV â€” AI benchmarks Â· model pricing
-           tech funding rounds Â· exploited CVEs
+  200 OK   free JSON/CSV - AI benchmarks, model pricing,
+           tech funding rounds, exploited CVEs.
            no key. no rate limit. CC BY 4.0.
 
 $ _
 ```
 
-**[genztech.blog](https://genztech.blog)** Â· **[@genztechblog](https://x.com/genztechblog)**
-
-<img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/footer.svg" width="100%" alt="$ subscribe --weekly" />
+<a href="https://genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/footer.svg" width="100%" alt="$ subscribe --weekly" /></a>
