@@ -3,6 +3,13 @@
 <img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/operator-v2.gif" width="32%" alt="// operator.gif" />
 </p>
 
+<p>
+<a href="https://genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-site.svg" alt="genztech.blog" /></a>
+<a href="https://x.com/genztechblog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-x.svg" alt="x.com/genztechblog" /></a>
+<a href="https://instagram.com/genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-ig.svg" alt="instagram.com/genztech.blog" /></a>
+<a href="https://tiktok.com/@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-tt.svg" alt="tiktok.com/@genztech.blog" /></a>
+</p>
+
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/dossier.svg" width="100%" alt="whoami" />
 
 <img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/sec-stack.svg" width="100%" alt="$ ls ./stack" />

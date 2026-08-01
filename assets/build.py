@@ -117,6 +117,28 @@ def header():
     return s
 
 
+def chip(label):
+    """Bordered link chip, per the brand's topic-chip pattern (radius 3px,
+    Border stroke). Each is its own SVG so the README can wrap it in <a> -
+    markdown links would render in GitHub blue."""
+    W = int(len(label) * 7.25) + 52
+    H = 40
+    s = head(W, H, label)
+    s += ('<rect x="0.5" y="0.5" width="%d" height="%d" rx="3" fill="%s" stroke="%s" stroke-width="1"/>\n'
+          % (W - 1, H - 1, PANEL, BORDER))
+    s += ('<text class="mono" x="16" y="25" font-size="12" font-weight="600" fill="%s">&#8594;</text>\n' % SIGNAL)
+    s += ('<text class="mono" x="34" y="25" font-size="12" font-weight="500" letter-spacing="0.06em" fill="%s">%s</text>\n'
+          % (TEXTMID, label))
+    s += "</svg>\n"
+    return s
+
+
+LINKS = [("genztech.blog", "site"),
+         ("x / genztechblog", "x"),
+         ("instagram / genztech.blog", "ig"),
+         ("tiktok / genztech.blog", "tt")]
+
+
 def section(slug, cmd, right, num):
     W, H = 1200, 92
     G = 28
@@ -216,6 +238,8 @@ if __name__ == "__main__":
     write("dossier.svg", dossier())
     write("arsenal.svg", stack())
     write("footer.svg", footer())
+    for label, slug in LINKS:
+        write("link-%s.svg" % slug, chip(label))
     for slug, cmd, right, n in [
             ("stack", "ls ./stack", "6 modules", "01"),
             ("builds", "ls ./builds", "public repos", "02"),
