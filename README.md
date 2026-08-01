@@ -3,7 +3,7 @@
 <img align="top" src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/operator-v2.gif" width="32%" alt="// operator.gif" />
 </p>
 
-<p>
+<p align="center">
 <a href="https://genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-site-v2.svg" alt="genztech.blog" /></a>
 <a href="https://x.com/genztechblog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-x-v2.svg" alt="x.com/genztechblog" /></a>
 <a href="mailto:info@genztech.blog"><img src="https://raw.githubusercontent.com/blackbrainpy/blackbrainpy/main/assets/link-mail-v2.svg" alt="info@genztech.blog" /></a>
