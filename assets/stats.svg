@@ -16,7 +16,7 @@
 </defs>
 <rect width="1200" height="330" fill="#0A0B0C"/>
 <text class="m" x="28" y="42" fill="#7D8084"><tspan fill="#FF4D00">// </tspan>telemetry &#183; rolling 12 months</text>
-<text class="m" x="1172" y="42" fill="#7D8084" text-anchor="end">673 contributions</text>
+<text class="m" x="1172" y="42" fill="#7D8084" text-anchor="end">680 contributions</text>
 <line x1="28" y1="60" x2="1172" y2="60" stroke="#1D1F22" stroke-width="1"/>
 <g transform="translate(62,92)">
 <rect x="0" y="-34" width="3" height="52" fill="#26282B"/>
@@ -50,7 +50,7 @@
 </g>
 <g transform="translate(62,290)">
 <text class="m" x="0" y="0" fill="#7D8084">current streak</text>
-<text class="m" x="180" y="0" fill="#F2F2F0">23 DAYS</text>
+<text class="m" x="180" y="0" fill="#F2F2F0">24 DAYS</text>
 <text class="m" x="330" y="0" fill="#7D8084">longest streak</text>
 <text class="m" x="520" y="0" fill="#F2F2F0">39 DAYS</text>
 <text class="m" x="670" y="0" fill="#7D8084">window start</text>
