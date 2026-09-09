@@ -16,25 +16,25 @@
 </defs>
 <rect width="1200" height="330" fill="#0A0B0C"/>
 <text class="m" x="28" y="42" fill="#7D8084"><tspan fill="#FF4D00">// </tspan>activity &#183; last 30 days</text>
-<text class="m" x="1172" y="42" fill="#7D8084" text-anchor="end">peak 18/day</text>
+<text class="m" x="1172" y="42" fill="#7D8084" text-anchor="end">peak 22/day</text>
 <line x1="28" y1="60" x2="1172" y2="60" stroke="#1D1F22" stroke-width="1"/>
 <line x1="70" y1="76.0" x2="1130" y2="76.0" stroke="#1D1F22" stroke-width="1"/>
-<text class="m" x="58" y="80.0" fill="#7D8084" text-anchor="end">18</text>
+<text class="m" x="58" y="80.0" fill="#7D8084" text-anchor="end">22</text>
 <line x1="70" y1="124.0" x2="1130" y2="124.0" stroke="#1D1F22" stroke-width="1"/>
-<text class="m" x="58" y="128.0" fill="#7D8084" text-anchor="end">14</text>
+<text class="m" x="58" y="128.0" fill="#7D8084" text-anchor="end">16</text>
 <line x1="70" y1="172.0" x2="1130" y2="172.0" stroke="#1D1F22" stroke-width="1"/>
-<text class="m" x="58" y="176.0" fill="#7D8084" text-anchor="end">9</text>
+<text class="m" x="58" y="176.0" fill="#7D8084" text-anchor="end">11</text>
 <line x1="70" y1="220.0" x2="1130" y2="220.0" stroke="#1D1F22" stroke-width="1"/>
-<text class="m" x="58" y="224.0" fill="#7D8084" text-anchor="end">4</text>
+<text class="m" x="58" y="224.0" fill="#7D8084" text-anchor="end">6</text>
 <line x1="70" y1="268.0" x2="1130" y2="268.0" stroke="#1D1F22" stroke-width="1"/>
 <text class="m" x="58" y="272.0" fill="#7D8084" text-anchor="end">0</text>
-<path d="M70.0,118.7 L106.6,182.7 L143.1,129.3 L179.7,108.0 L216.2,140.0 L252.8,214.7 L289.3,182.7 L325.9,193.3 L362.4,214.7 L399.0,236.0 L435.5,236.0 L472.1,246.7 L508.6,225.3 L545.2,214.7 L581.7,236.0 L618.3,193.3 L654.8,214.7 L691.4,193.3 L727.9,193.3 L764.5,150.7 L801.0,193.3 L837.6,97.3 L874.1,150.7 L910.7,140.0 L947.2,129.3 L983.8,140.0 L1020.3,118.7 L1056.9,129.3 L1093.4,97.3 L1130.0,76.0 L1130.0,268.0 L70.0,268.0 Z" fill="url(#ag)" class="ar"/>
-<path d="M70.0,118.7 L106.6,182.7 L143.1,129.3 L179.7,108.0 L216.2,140.0 L252.8,214.7 L289.3,182.7 L325.9,193.3 L362.4,214.7 L399.0,236.0 L435.5,236.0 L472.1,246.7 L508.6,225.3 L545.2,214.7 L581.7,236.0 L618.3,193.3 L654.8,214.7 L691.4,193.3 L727.9,193.3 L764.5,150.7 L801.0,193.3 L837.6,97.3 L874.1,150.7 L910.7,140.0 L947.2,129.3 L983.8,140.0 L1020.3,118.7 L1056.9,129.3 L1093.4,97.3 L1130.0,76.0" fill="none" stroke="#FF4D00" stroke-width="2.5" class="ln"/>
-<circle cx="1130.0" cy="76.0" r="5" fill="#FF4D00"/>
-<text class="m" x="70.0" y="292" fill="#7D8084" text-anchor="middle">08-10</text>
-<text class="m" x="289.3" y="292" fill="#7D8084" text-anchor="middle">08-16</text>
-<text class="m" x="508.6" y="292" fill="#7D8084" text-anchor="middle">08-22</text>
-<text class="m" x="727.9" y="292" fill="#7D8084" text-anchor="middle">08-28</text>
-<text class="m" x="947.2" y="292" fill="#7D8084" text-anchor="middle">09-03</text>
+<path d="M70.0,198.2 L106.6,154.5 L143.1,137.1 L179.7,163.3 L216.2,224.4 L252.8,198.2 L289.3,206.9 L325.9,224.4 L362.4,241.8 L399.0,241.8 L435.5,250.5 L472.1,233.1 L508.6,224.4 L545.2,241.8 L581.7,206.9 L618.3,224.4 L654.8,206.9 L691.4,206.9 L727.9,172.0 L764.5,206.9 L801.0,128.4 L837.6,172.0 L874.1,163.3 L910.7,154.5 L947.2,163.3 L983.8,145.8 L1020.3,154.5 L1056.9,128.4 L1093.4,76.0 L1130.0,154.5 L1130.0,268.0 L70.0,268.0 Z" fill="url(#ag)" class="ar"/>
+<path d="M70.0,198.2 L106.6,154.5 L143.1,137.1 L179.7,163.3 L216.2,224.4 L252.8,198.2 L289.3,206.9 L325.9,224.4 L362.4,241.8 L399.0,241.8 L435.5,250.5 L472.1,233.1 L508.6,224.4 L545.2,241.8 L581.7,206.9 L618.3,224.4 L654.8,206.9 L691.4,206.9 L727.9,172.0 L764.5,206.9 L801.0,128.4 L837.6,172.0 L874.1,163.3 L910.7,154.5 L947.2,163.3 L983.8,145.8 L1020.3,154.5 L1056.9,128.4 L1093.4,76.0 L1130.0,154.5" fill="none" stroke="#FF4D00" stroke-width="2.5" class="ln"/>
+<circle cx="1093.4" cy="76.0" r="5" fill="#FF4D00"/>
+<text class="m" x="70.0" y="292" fill="#7D8084" text-anchor="middle">08-11</text>
+<text class="m" x="289.3" y="292" fill="#7D8084" text-anchor="middle">08-17</text>
+<text class="m" x="508.6" y="292" fill="#7D8084" text-anchor="middle">08-23</text>
+<text class="m" x="727.9" y="292" fill="#7D8084" text-anchor="middle">08-29</text>
+<text class="m" x="947.2" y="292" fill="#7D8084" text-anchor="middle">09-04</text>
 <text class="m" x="70" y="316" fill="#7D8084">DAYS</text>
 </svg>
